@@ -1,0 +1,52 @@
+[
+  {
+    "id": "aaeadacc-e8e3-44d5-9c67-ad7bd06fc349",
+    "name": "Aiko",
+    "description": "Beginner tutor",
+    "style": "Gentle Encouraging Tutor",
+    "photo": "data/tutor/photo/aaeadacc-e8e3-44d5-9c67-ad7bd06fc349_1776789010419_akio.jpg",
+    "video": "data/tutor/video/aaeadacc-e8e3-44d5-9c67-ad7bd06fc349_1776789010423_ai-video-akio.mp4",
+    "createdAt": "2026-04-21T16:30:10.436Z",
+    "updatedAt": "2026-04-21T16:30:10.436Z"
+  },
+  {
+    "id": "2b15d065-f9d7-4f66-b28d-eaf4c5a828a8",
+    "name": "Clara",
+    "description": "Grammar & vocabulary mentor",
+    "style": "Professional Language Mentor",
+    "photo": "data/tutor/photo/2b15d065-f9d7-4f66-b28d-eaf4c5a828a8_1776789112075_clara.jpg",
+    "video": "data/tutor/video/2b15d065-f9d7-4f66-b28d-eaf4c5a828a8_1776789112081_ai-video-clara.mp4",
+    "createdAt": "2026-04-21T16:31:52.089Z",
+    "updatedAt": "2026-04-21T16:31:52.089Z"
+  },
+  {
+    "id": "08e07a79-fb33-4af0-9865-c37aabcef6c7",
+    "name": "Lyra",
+    "description": "Listening & pronunciation assistant",
+    "style": "Futuristic AI Language Guide",
+    "photo": "data/tutor/photo/08e07a79-fb33-4af0-9865-c37aabcef6c7_1776789178619_lyra.jpg",
+    "video": "data/tutor/video/08e07a79-fb33-4af0-9865-c37aabcef6c7_1776789178623_ai-video-lyra.mp4",
+    "createdAt": "2026-04-21T16:32:58.635Z",
+    "updatedAt": "2026-04-21T16:32:58.635Z"
+  },
+  {
+    "id": "3d969b9c-8368-43bc-a934-208b09b13859",
+    "name": "Leo",
+    "description": "Casual conversation partner",
+    "style": "Playful Conversation Buddy",
+    "photo": "data/tutor/photo/3d969b9c-8368-43bc-a934-208b09b13859_1776789236376_leo.jpg",
+    "video": "data/tutor/video/3d969b9c-8368-43bc-a934-208b09b13859_1776789236382_ai-video-leo.mp4",
+    "createdAt": "2026-04-21T16:33:56.391Z",
+    "updatedAt": "2026-04-21T16:33:56.391Z"
+  },
+  {
+    "id": "58f86c1e-a8cc-41df-ac71-9c85e4d98971",
+    "name": "Oliver",
+    "description": "Speaking confidence coach",
+    "style": "Motivational Speaking Coach",
+    "photo": "data/tutor/photo/58f86c1e-a8cc-41df-ac71-9c85e4d98971_1776789343243_oliver.jpg",
+    "video": "data/tutor/video/58f86c1e-a8cc-41df-ac71-9c85e4d98971_1776789343249_ai-video-oliver.mp4",
+    "createdAt": "2026-04-21T16:35:43.257Z",
+    "updatedAt": "2026-04-21T16:35:43.257Z"
+  }
+]
