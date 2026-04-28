@@ -14,8 +14,14 @@
         "id": "intro",
         "type": "tutor_messages",
         "messages": [
-          "नमस्ते! 👋 मैं आपका FluentAI शिक्षक हूँ।",
-          "शुरू करने से पहले — आपका नाम क्या है?"
+          {
+            "text": "नमस्ते! 👋 मैं आपका FluentAI शिक्षक हूँ।",
+            "audio": "data/survey/audio/hi/intro_step_1.wav"
+          },
+          {
+            "text": "शुरू करने से पहले — आपका नाम क्या है?",
+            "audio": "data/survey/audio/hi/intro_step_2.wav"
+          }
         ]
       },
       {
@@ -28,8 +34,14 @@
         "id": "after_name",
         "type": "tutor_messages",
         "messages": [
-          "आपसे मिलकर अच्छा लगा, {name}! 😊",
-          "आपका वर्तमान अंग्रेज़ी स्तर क्या है?"
+          {
+            "text": "आपसे मिलकर अच्छा लगा, {name}! 😊",
+            "audio": "data/survey/audio/hi/after_name_step_1.wav"
+          },
+          {
+            "text": "आपका वर्तमान अंग्रेज़ी स्तर क्या है?",
+            "audio": "data/survey/audio/hi/after_name_step_2.wav"
+          }
         ]
       },
       {
@@ -37,20 +49,50 @@
         "type": "single_choice",
         "save_as": "english_level",
         "options": [
-          { "value": "A1", "label": "A1", "description": "शुरुआती" },
-          { "value": "A2", "label": "A2", "description": "प्रारंभिक" },
-          { "value": "B1", "label": "B1", "description": "मध्यवर्ती" },
-          { "value": "B2", "label": "B2", "description": "उच्च-मध्यवर्ती" },
-          { "value": "C1", "label": "C1", "description": "उन्नत" },
-          { "value": "C2", "label": "C2", "description": "प्रवीण" }
+          {
+            "value": "A1",
+            "label": "A1",
+            "description": "शुरुआती"
+          },
+          {
+            "value": "A2",
+            "label": "A2",
+            "description": "प्रारंभिक"
+          },
+          {
+            "value": "B1",
+            "label": "B1",
+            "description": "मध्यवर्ती"
+          },
+          {
+            "value": "B2",
+            "label": "B2",
+            "description": "उच्च-मध्यवर्ती"
+          },
+          {
+            "value": "C1",
+            "label": "C1",
+            "description": "उन्नत"
+          },
+          {
+            "value": "C2",
+            "label": "C2",
+            "description": "प्रवीण"
+          }
         ]
       },
       {
         "id": "after_level",
         "type": "tutor_messages",
         "messages": [
-          "लगभग पूरा हो गया, {name}! 🚀",
-          "अंग्रेज़ी सीखने का आपका मुख्य लक्ष्य क्या है?"
+          {
+            "text": "लगभग पूरा हो गया, {name}! 🚀",
+            "audio": "data/survey/audio/hi/after_level_step_1.wav"
+          },
+          {
+            "text": "अंग्रेज़ी सीखने का आपका मुख्य लक्ष्य क्या है?",
+            "audio": "data/survey/audio/hi/after_level_step_2.wav"
+          }
         ]
       },
       {
@@ -58,19 +100,45 @@
         "type": "single_choice",
         "save_as": "learning_goal",
         "options": [
-          { "value": "work",   "emoji": "💼", "label": "कार्य और करियर" },
-          { "value": "study",  "emoji": "📚", "label": "अकादमिक अध्ययन" },
-          { "value": "travel", "emoji": "✈️", "label": "यात्रा और अन्वेषण" },
-          { "value": "daily",  "emoji": "💬", "label": "दैनिक बातचीत" },
-          { "value": "ielts",  "emoji": "🎯", "label": "IELTS / TOEFL परीक्षा" }
+          {
+            "value": "work",
+            "emoji": "💼",
+            "label": "कार्य और करियर"
+          },
+          {
+            "value": "study",
+            "emoji": "📚",
+            "label": "अकादमिक अध्ययन"
+          },
+          {
+            "value": "travel",
+            "emoji": "✈️",
+            "label": "यात्रा और अन्वेषण"
+          },
+          {
+            "value": "daily",
+            "emoji": "💬",
+            "label": "दैनिक बातचीत"
+          },
+          {
+            "value": "ielts",
+            "emoji": "🎯",
+            "label": "IELTS / TOEFL परीक्षा"
+          }
         ]
       },
       {
         "id": "done",
         "type": "tutor_messages",
         "messages": [
-          "आपकी सीखने की प्रोफ़ाइल तैयार है, {name}! 🎉",
-          "मैं अभी आपके AI शिक्षक अनुभव को वैयक्तिकृत कर रहा हूँ…"
+          {
+            "text": "आपकी सीखने की प्रोफ़ाइल तैयार है, {name}! 🎉",
+            "audio": "data/survey/audio/hi/done_step_1.wav"
+          },
+          {
+            "text": "मैं अभी आपके AI शिक्षक अनुभव को वैयक्तिकृत कर रहा हूँ…",
+            "audio": "data/survey/audio/hi/done_step_2.wav"
+          }
         ]
       }
     ]

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "locale": "id",
+  "locale": "in",
   "survey": {
     "tutor": {
       "name": "Tutor FluentAI",
@@ -14,8 +14,14 @@
         "id": "intro",
         "type": "tutor_messages",
         "messages": [
-          "Halo! 👋 Saya tutor FluentAI Anda.",
-          "Sebelum kita mulai — siapa nama Anda?"
+          {
+            "text": "Halo! 👋 Saya tutor FluentAI Anda.",
+            "audio": "data/survey/audio/in/intro_step_1.wav"
+          },
+          {
+            "text": "Sebelum kita mulai — siapa nama Anda?",
+            "audio": "data/survey/audio/in/intro_step_2.wav"
+          }
         ]
       },
       {
@@ -28,8 +34,14 @@
         "id": "after_name",
         "type": "tutor_messages",
         "messages": [
-          "Senang bertemu Anda, {name}! 😊",
-          "Apa tingkat bahasa Inggris Anda saat ini?"
+          {
+            "text": "Senang bertemu Anda, {name}! 😊",
+            "audio": "data/survey/audio/in/after_name_step_1.wav"
+          },
+          {
+            "text": "Apa tingkat bahasa Inggris Anda saat ini?",
+            "audio": "data/survey/audio/in/after_name_step_2.wav"
+          }
         ]
       },
       {
@@ -37,20 +49,50 @@
         "type": "single_choice",
         "save_as": "english_level",
         "options": [
-          { "value": "A1", "label": "A1", "description": "Pemula" },
-          { "value": "A2", "label": "A2", "description": "Dasar" },
-          { "value": "B1", "label": "B1", "description": "Menengah" },
-          { "value": "B2", "label": "B2", "description": "Menengah-atas" },
-          { "value": "C1", "label": "C1", "description": "Mahir" },
-          { "value": "C2", "label": "C2", "description": "Sangat mahir" }
+          {
+            "value": "A1",
+            "label": "A1",
+            "description": "Pemula"
+          },
+          {
+            "value": "A2",
+            "label": "A2",
+            "description": "Dasar"
+          },
+          {
+            "value": "B1",
+            "label": "B1",
+            "description": "Menengah"
+          },
+          {
+            "value": "B2",
+            "label": "B2",
+            "description": "Menengah-atas"
+          },
+          {
+            "value": "C1",
+            "label": "C1",
+            "description": "Mahir"
+          },
+          {
+            "value": "C2",
+            "label": "C2",
+            "description": "Sangat mahir"
+          }
         ]
       },
       {
         "id": "after_level",
         "type": "tutor_messages",
         "messages": [
-          "Hampir selesai, {name}! 🚀",
-          "Apa tujuan utama Anda belajar bahasa Inggris?"
+          {
+            "text": "Hampir selesai, {name}! 🚀",
+            "audio": "data/survey/audio/in/after_level_step_1.wav"
+          },
+          {
+            "text": "Apa tujuan utama Anda belajar bahasa Inggris?",
+            "audio": "data/survey/audio/in/after_level_step_2.wav"
+          }
         ]
       },
       {
@@ -58,19 +100,45 @@
         "type": "single_choice",
         "save_as": "learning_goal",
         "options": [
-          { "value": "work",   "emoji": "💼", "label": "Pekerjaan & karier" },
-          { "value": "study",  "emoji": "📚", "label": "Studi akademik" },
-          { "value": "travel", "emoji": "✈️", "label": "Perjalanan & eksplorasi" },
-          { "value": "daily",  "emoji": "💬", "label": "Percakapan sehari-hari" },
-          { "value": "ielts",  "emoji": "🎯", "label": "Ujian IELTS / TOEFL" }
+          {
+            "value": "work",
+            "emoji": "💼",
+            "label": "Pekerjaan & karier"
+          },
+          {
+            "value": "study",
+            "emoji": "📚",
+            "label": "Studi akademik"
+          },
+          {
+            "value": "travel",
+            "emoji": "✈️",
+            "label": "Perjalanan & eksplorasi"
+          },
+          {
+            "value": "daily",
+            "emoji": "💬",
+            "label": "Percakapan sehari-hari"
+          },
+          {
+            "value": "ielts",
+            "emoji": "🎯",
+            "label": "Ujian IELTS / TOEFL"
+          }
         ]
       },
       {
         "id": "done",
         "type": "tutor_messages",
         "messages": [
-          "Profil belajar Anda siap, {name}! 🎉",
-          "Saya sedang mempersonalisasi pengalaman tutor AI Anda…"
+          {
+            "text": "Profil belajar Anda siap, {name}! 🎉",
+            "audio": "data/survey/audio/in/done_step_1.wav"
+          },
+          {
+            "text": "Saya sedang mempersonalisasi pengalaman tutor AI Anda…",
+            "audio": "data/survey/audio/in/done_step_2.wav"
+          }
         ]
       }
     ]

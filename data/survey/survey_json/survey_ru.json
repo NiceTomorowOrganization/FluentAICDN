@@ -14,8 +14,14 @@
         "id": "intro",
         "type": "tutor_messages",
         "messages": [
-          "Привет! 👋 Я ваш FluentAI Репетитор.",
-          "Прежде чем начать — как вас зовут?"
+          {
+            "text": "Привет! 👋 Я ваш FluentAI Репетитор.",
+            "audio": "data/survey/audio/ru/intro_step_1.wav"
+          },
+          {
+            "text": "Прежде чем начать — как вас зовут?",
+            "audio": "data/survey/audio/ru/intro_step_2.wav"
+          }
         ]
       },
       {
@@ -28,8 +34,14 @@
         "id": "after_name",
         "type": "tutor_messages",
         "messages": [
-          "Приятно познакомиться, {name}! 😊",
-          "Какой ваш текущий уровень английского?"
+          {
+            "text": "Приятно познакомиться, {name}! 😊",
+            "audio": "data/survey/audio/ru/after_name_step_1.wav"
+          },
+          {
+            "text": "Какой ваш текущий уровень английского?",
+            "audio": "data/survey/audio/ru/after_name_step_2.wav"
+          }
         ]
       },
       {
@@ -37,20 +49,50 @@
         "type": "single_choice",
         "save_as": "english_level",
         "options": [
-          { "value": "A1", "label": "A1", "description": "Начинающий" },
-          { "value": "A2", "label": "A2", "description": "Базовый" },
-          { "value": "B1", "label": "B1", "description": "Средний" },
-          { "value": "B2", "label": "B2", "description": "Выше среднего" },
-          { "value": "C1", "label": "C1", "description": "Продвинутый" },
-          { "value": "C2", "label": "C2", "description": "Свободное владение" }
+          {
+            "value": "A1",
+            "label": "A1",
+            "description": "Начинающий"
+          },
+          {
+            "value": "A2",
+            "label": "A2",
+            "description": "Базовый"
+          },
+          {
+            "value": "B1",
+            "label": "B1",
+            "description": "Средний"
+          },
+          {
+            "value": "B2",
+            "label": "B2",
+            "description": "Выше среднего"
+          },
+          {
+            "value": "C1",
+            "label": "C1",
+            "description": "Продвинутый"
+          },
+          {
+            "value": "C2",
+            "label": "C2",
+            "description": "Свободное владение"
+          }
         ]
       },
       {
         "id": "after_level",
         "type": "tutor_messages",
         "messages": [
-          "Почти готово, {name}! 🚀",
-          "Какова ваша главная цель изучения английского?"
+          {
+            "text": "Почти готово, {name}! 🚀",
+            "audio": "data/survey/audio/ru/after_level_step_1.wav"
+          },
+          {
+            "text": "Какова ваша главная цель изучения английского?",
+            "audio": "data/survey/audio/ru/after_level_step_2.wav"
+          }
         ]
       },
       {
@@ -58,19 +100,45 @@
         "type": "single_choice",
         "save_as": "learning_goal",
         "options": [
-          { "value": "work",   "emoji": "💼", "label": "Работа и карьера" },
-          { "value": "study",  "emoji": "📚", "label": "Академическое изучение" },
-          { "value": "travel", "emoji": "✈️", "label": "Путешествия и исследования" },
-          { "value": "daily",  "emoji": "💬", "label": "Повседневный разговор" },
-          { "value": "ielts",  "emoji": "🎯", "label": "Экзамен IELTS / TOEFL" }
+          {
+            "value": "work",
+            "emoji": "💼",
+            "label": "Работа и карьера"
+          },
+          {
+            "value": "study",
+            "emoji": "📚",
+            "label": "Академическое изучение"
+          },
+          {
+            "value": "travel",
+            "emoji": "✈️",
+            "label": "Путешествия и исследования"
+          },
+          {
+            "value": "daily",
+            "emoji": "💬",
+            "label": "Повседневный разговор"
+          },
+          {
+            "value": "ielts",
+            "emoji": "🎯",
+            "label": "Экзамен IELTS / TOEFL"
+          }
         ]
       },
       {
         "id": "done",
         "type": "tutor_messages",
         "messages": [
-          "Ваш профиль обучения готов, {name}! 🎉",
-          "Я персонализирую ваш опыт ИИ-репетитора прямо сейчас…"
+          {
+            "text": "Ваш профиль обучения готов, {name}! 🎉",
+            "audio": "data/survey/audio/ru/done_step_1.wav"
+          },
+          {
+            "text": "Я персонализирую ваш опыт ИИ-репетитора прямо сейчас…",
+            "audio": "data/survey/audio/ru/done_step_2.wav"
+          }
         ]
       }
     ]

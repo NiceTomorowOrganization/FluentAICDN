@@ -14,8 +14,14 @@
         "id": "intro",
         "type": "tutor_messages",
         "messages": [
-          "こんにちは! 👋 私はあなたのFluentAIチューターです。",
-          "始める前に — お名前は何ですか?"
+          {
+            "text": "こんにちは! 👋 私はあなたのFluentAIチューターです。",
+            "audio": "data/survey/audio/ja/intro_step_1.wav"
+          },
+          {
+            "text": "始める前に — お名前は何ですか?",
+            "audio": "data/survey/audio/ja/intro_step_2.wav"
+          }
         ]
       },
       {
@@ -28,8 +34,14 @@
         "id": "after_name",
         "type": "tutor_messages",
         "messages": [
-          "はじめまして、{name}さん! 😊",
-          "現在の英語レベルはどれくらいですか?"
+          {
+            "text": "はじめまして、{name}さん! 😊",
+            "audio": "data/survey/audio/ja/after_name_step_1.wav"
+          },
+          {
+            "text": "現在の英語レベルはどれくらいですか?",
+            "audio": "data/survey/audio/ja/after_name_step_2.wav"
+          }
         ]
       },
       {
@@ -37,20 +49,50 @@
         "type": "single_choice",
         "save_as": "english_level",
         "options": [
-          { "value": "A1", "label": "A1", "description": "初心者" },
-          { "value": "A2", "label": "A2", "description": "初級" },
-          { "value": "B1", "label": "B1", "description": "中級" },
-          { "value": "B2", "label": "B2", "description": "中上級" },
-          { "value": "C1", "label": "C1", "description": "上級" },
-          { "value": "C2", "label": "C2", "description": "熟達" }
+          {
+            "value": "A1",
+            "label": "A1",
+            "description": "初心者"
+          },
+          {
+            "value": "A2",
+            "label": "A2",
+            "description": "初級"
+          },
+          {
+            "value": "B1",
+            "label": "B1",
+            "description": "中級"
+          },
+          {
+            "value": "B2",
+            "label": "B2",
+            "description": "中上級"
+          },
+          {
+            "value": "C1",
+            "label": "C1",
+            "description": "上級"
+          },
+          {
+            "value": "C2",
+            "label": "C2",
+            "description": "熟達"
+          }
         ]
       },
       {
         "id": "after_level",
         "type": "tutor_messages",
         "messages": [
-          "もうすぐ完了です、{name}さん! 🚀",
-          "英語を学ぶ主な目的は何ですか?"
+          {
+            "text": "もうすぐ完了です、{name}さん! 🚀",
+            "audio": "data/survey/audio/ja/after_level_step_1.wav"
+          },
+          {
+            "text": "英語を学ぶ主な目的は何ですか?",
+            "audio": "data/survey/audio/ja/after_level_step_2.wav"
+          }
         ]
       },
       {
@@ -58,19 +100,45 @@
         "type": "single_choice",
         "save_as": "learning_goal",
         "options": [
-          { "value": "work",   "emoji": "💼", "label": "仕事とキャリア" },
-          { "value": "study",  "emoji": "📚", "label": "学術研究" },
-          { "value": "travel", "emoji": "✈️", "label": "旅行と探検" },
-          { "value": "daily",  "emoji": "💬", "label": "日常会話" },
-          { "value": "ielts",  "emoji": "🎯", "label": "IELTS / TOEFL試験" }
+          {
+            "value": "work",
+            "emoji": "💼",
+            "label": "仕事とキャリア"
+          },
+          {
+            "value": "study",
+            "emoji": "📚",
+            "label": "学術研究"
+          },
+          {
+            "value": "travel",
+            "emoji": "✈️",
+            "label": "旅行と探検"
+          },
+          {
+            "value": "daily",
+            "emoji": "💬",
+            "label": "日常会話"
+          },
+          {
+            "value": "ielts",
+            "emoji": "🎯",
+            "label": "IELTS / TOEFL試験"
+          }
         ]
       },
       {
         "id": "done",
         "type": "tutor_messages",
         "messages": [
-          "学習プロフィールの準備ができました、{name}さん! 🎉",
-          "AIチューター体験をパーソナライズしています…"
+          {
+            "text": "学習プロフィールの準備ができました、{name}さん! 🎉",
+            "audio": "data/survey/audio/ja/done_step_1.wav"
+          },
+          {
+            "text": "AIチューター体験をパーソナライズしています…",
+            "audio": "data/survey/audio/ja/done_step_2.wav"
+          }
         ]
       }
     ]

@@ -14,8 +14,14 @@
         "id": "intro",
         "type": "tutor_messages",
         "messages": [
-          "مرحبًا! 👋 أنا مدرسك FluentAI.",
-          "قبل أن نبدأ — ما اسمك؟"
+          {
+            "text": "مرحبًا! 👋 أنا مدرسك FluentAI.",
+            "audio": "data/survey/audio/ar/intro_step_1.wav"
+          },
+          {
+            "text": "قبل أن نبدأ — ما اسمك؟",
+            "audio": "data/survey/audio/ar/intro_step_2.wav"
+          }
         ]
       },
       {
@@ -28,8 +34,14 @@
         "id": "after_name",
         "type": "tutor_messages",
         "messages": [
-          "سعيد بلقائك، {name}! 😊",
-          "ما هو مستواك الحالي في اللغة الإنجليزية؟"
+          {
+            "text": "سعيد بلقائك، {name}! 😊",
+            "audio": "data/survey/audio/ar/after_name_step_1.wav"
+          },
+          {
+            "text": "ما هو مستواك الحالي في اللغة الإنجليزية؟",
+            "audio": "data/survey/audio/ar/after_name_step_2.wav"
+          }
         ]
       },
       {
@@ -37,20 +49,50 @@
         "type": "single_choice",
         "save_as": "english_level",
         "options": [
-          { "value": "A1", "label": "A1", "description": "مبتدئ" },
-          { "value": "A2", "label": "A2", "description": "ابتدائي" },
-          { "value": "B1", "label": "B1", "description": "متوسط" },
-          { "value": "B2", "label": "B2", "description": "متوسط فوق" },
-          { "value": "C1", "label": "C1", "description": "متقدم" },
-          { "value": "C2", "label": "C2", "description": "إتقان" }
+          {
+            "value": "A1",
+            "label": "A1",
+            "description": "مبتدئ"
+          },
+          {
+            "value": "A2",
+            "label": "A2",
+            "description": "ابتدائي"
+          },
+          {
+            "value": "B1",
+            "label": "B1",
+            "description": "متوسط"
+          },
+          {
+            "value": "B2",
+            "label": "B2",
+            "description": "متوسط فوق"
+          },
+          {
+            "value": "C1",
+            "label": "C1",
+            "description": "متقدم"
+          },
+          {
+            "value": "C2",
+            "label": "C2",
+            "description": "إتقان"
+          }
         ]
       },
       {
         "id": "after_level",
         "type": "tutor_messages",
         "messages": [
-          "قاربنا على الانتهاء، {name}! 🚀",
-          "ما هو هدفك الرئيسي من تعلم الإنجليزية؟"
+          {
+            "text": "قاربنا على الانتهاء، {name}! 🚀",
+            "audio": "data/survey/audio/ar/after_level_step_1.wav"
+          },
+          {
+            "text": "ما هو هدفك الرئيسي من تعلم الإنجليزية؟",
+            "audio": "data/survey/audio/ar/after_level_step_2.wav"
+          }
         ]
       },
       {
@@ -58,19 +100,45 @@
         "type": "single_choice",
         "save_as": "learning_goal",
         "options": [
-          { "value": "work",   "emoji": "💼", "label": "العمل والمهنة" },
-          { "value": "study",  "emoji": "📚", "label": "الدراسة الأكاديمية" },
-          { "value": "travel", "emoji": "✈️", "label": "السفر والاستكشاف" },
-          { "value": "daily",  "emoji": "💬", "label": "المحادثة اليومية" },
-          { "value": "ielts",  "emoji": "🎯", "label": "امتحان IELTS / TOEFL" }
+          {
+            "value": "work",
+            "emoji": "💼",
+            "label": "العمل والمهنة"
+          },
+          {
+            "value": "study",
+            "emoji": "📚",
+            "label": "الدراسة الأكاديمية"
+          },
+          {
+            "value": "travel",
+            "emoji": "✈️",
+            "label": "السفر والاستكشاف"
+          },
+          {
+            "value": "daily",
+            "emoji": "💬",
+            "label": "المحادثة اليومية"
+          },
+          {
+            "value": "ielts",
+            "emoji": "🎯",
+            "label": "امتحان IELTS / TOEFL"
+          }
         ]
       },
       {
         "id": "done",
         "type": "tutor_messages",
         "messages": [
-          "ملف التعلم الخاص بك جاهز، {name}! 🎉",
-          "أقوم بتخصيص تجربة المدرس الذكي لك الآن…"
+          {
+            "text": "ملف التعلم الخاص بك جاهز، {name}! 🎉",
+            "audio": "data/survey/audio/ar/done_step_1.wav"
+          },
+          {
+            "text": "أقوم بتخصيص تجربة المدرس الذكي لك الآن…",
+            "audio": "data/survey/audio/ar/done_step_2.wav"
+          }
         ]
       }
     ]

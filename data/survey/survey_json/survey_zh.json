@@ -14,8 +14,14 @@
         "id": "intro",
         "type": "tutor_messages",
         "messages": [
-          "您好! 👋 我是您的FluentAI导师。",
-          "在我们开始之前 — 您叫什么名字？"
+          {
+            "text": "您好! 👋 我是您的FluentAI导师。",
+            "audio": "data/survey/audio/zh/intro_step_1.wav"
+          },
+          {
+            "text": "在我们开始之前 — 您叫什么名字？",
+            "audio": "data/survey/audio/zh/intro_step_2.wav"
+          }
         ]
       },
       {
@@ -28,8 +34,14 @@
         "id": "after_name",
         "type": "tutor_messages",
         "messages": [
-          "很高兴认识您，{name}! 😊",
-          "您当前的英语水平如何？"
+          {
+            "text": "很高兴认识您，{name}! 😊",
+            "audio": "data/survey/audio/zh/after_name_step_1.wav"
+          },
+          {
+            "text": "您当前的英语水平如何？",
+            "audio": "data/survey/audio/zh/after_name_step_2.wav"
+          }
         ]
       },
       {
@@ -37,20 +49,50 @@
         "type": "single_choice",
         "save_as": "english_level",
         "options": [
-          { "value": "A1", "label": "A1", "description": "初学者" },
-          { "value": "A2", "label": "A2", "description": "基础" },
-          { "value": "B1", "label": "B1", "description": "中级" },
-          { "value": "B2", "label": "B2", "description": "中高级" },
-          { "value": "C1", "label": "C1", "description": "高级" },
-          { "value": "C2", "label": "C2", "description": "精通" }
+          {
+            "value": "A1",
+            "label": "A1",
+            "description": "初学者"
+          },
+          {
+            "value": "A2",
+            "label": "A2",
+            "description": "基础"
+          },
+          {
+            "value": "B1",
+            "label": "B1",
+            "description": "中级"
+          },
+          {
+            "value": "B2",
+            "label": "B2",
+            "description": "中高级"
+          },
+          {
+            "value": "C1",
+            "label": "C1",
+            "description": "高级"
+          },
+          {
+            "value": "C2",
+            "label": "C2",
+            "description": "精通"
+          }
         ]
       },
       {
         "id": "after_level",
         "type": "tutor_messages",
         "messages": [
-          "快完成了，{name}! 🚀",
-          "您学习英语的主要目标是什么？"
+          {
+            "text": "快完成了，{name}! 🚀",
+            "audio": "data/survey/audio/zh/after_level_step_1.wav"
+          },
+          {
+            "text": "您学习英语的主要目标是什么？",
+            "audio": "data/survey/audio/zh/after_level_step_2.wav"
+          }
         ]
       },
       {
@@ -58,19 +100,45 @@
         "type": "single_choice",
         "save_as": "learning_goal",
         "options": [
-          { "value": "work",   "emoji": "💼", "label": "工作与职业" },
-          { "value": "study",  "emoji": "📚", "label": "学术研究" },
-          { "value": "travel", "emoji": "✈️", "label": "旅游与探索" },
-          { "value": "daily",  "emoji": "💬", "label": "日常对话" },
-          { "value": "ielts",  "emoji": "🎯", "label": "IELTS / TOEFL考试" }
+          {
+            "value": "work",
+            "emoji": "💼",
+            "label": "工作与职业"
+          },
+          {
+            "value": "study",
+            "emoji": "📚",
+            "label": "学术研究"
+          },
+          {
+            "value": "travel",
+            "emoji": "✈️",
+            "label": "旅游与探索"
+          },
+          {
+            "value": "daily",
+            "emoji": "💬",
+            "label": "日常对话"
+          },
+          {
+            "value": "ielts",
+            "emoji": "🎯",
+            "label": "IELTS / TOEFL考试"
+          }
         ]
       },
       {
         "id": "done",
         "type": "tutor_messages",
         "messages": [
-          "您的学习档案已准备好，{name}! 🎉",
-          "我正在为您个性化AI导师体验…"
+          {
+            "text": "您的学习档案已准备好，{name}! 🎉",
+            "audio": "data/survey/audio/zh/done_step_1.wav"
+          },
+          {
+            "text": "我正在为您个性化AI导师体验…",
+            "audio": "data/survey/audio/zh/done_step_2.wav"
+          }
         ]
       }
     ]

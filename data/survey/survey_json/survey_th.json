@@ -14,8 +14,14 @@
         "id": "intro",
         "type": "tutor_messages",
         "messages": [
-          "สวัสดี! 👋 ฉันคือติวเตอร์ FluentAI ของคุณ",
-          "ก่อนเริ่ม — คุณชื่ออะไร?"
+          {
+            "text": "สวัสดี! 👋 ฉันคือติวเตอร์ FluentAI ของคุณ",
+            "audio": "data/survey/audio/th/intro_step_1.wav"
+          },
+          {
+            "text": "ก่อนเริ่ม — คุณชื่ออะไร?",
+            "audio": "data/survey/audio/th/intro_step_2.wav"
+          }
         ]
       },
       {
@@ -28,8 +34,14 @@
         "id": "after_name",
         "type": "tutor_messages",
         "messages": [
-          "ยินดีที่ได้รู้จัก, {name}! 😊",
-          "ระดับภาษาอังกฤษปัจจุบันของคุณคืออะไร?"
+          {
+            "text": "ยินดีที่ได้รู้จัก, {name}! 😊",
+            "audio": "data/survey/audio/th/after_name_step_1.wav"
+          },
+          {
+            "text": "ระดับภาษาอังกฤษปัจจุบันของคุณคืออะไร?",
+            "audio": "data/survey/audio/th/after_name_step_2.wav"
+          }
         ]
       },
       {
@@ -37,20 +49,50 @@
         "type": "single_choice",
         "save_as": "english_level",
         "options": [
-          { "value": "A1", "label": "A1", "description": "ผู้เริ่มต้น" },
-          { "value": "A2", "label": "A2", "description": "พื้นฐาน" },
-          { "value": "B1", "label": "B1", "description": "ปานกลาง" },
-          { "value": "B2", "label": "B2", "description": "ปานกลาง-สูง" },
-          { "value": "C1", "label": "C1", "description": "สูง" },
-          { "value": "C2", "label": "C2", "description": "เชี่ยวชาญ" }
+          {
+            "value": "A1",
+            "label": "A1",
+            "description": "ผู้เริ่มต้น"
+          },
+          {
+            "value": "A2",
+            "label": "A2",
+            "description": "พื้นฐาน"
+          },
+          {
+            "value": "B1",
+            "label": "B1",
+            "description": "ปานกลาง"
+          },
+          {
+            "value": "B2",
+            "label": "B2",
+            "description": "ปานกลาง-สูง"
+          },
+          {
+            "value": "C1",
+            "label": "C1",
+            "description": "สูง"
+          },
+          {
+            "value": "C2",
+            "label": "C2",
+            "description": "เชี่ยวชาญ"
+          }
         ]
       },
       {
         "id": "after_level",
         "type": "tutor_messages",
         "messages": [
-          "เกือบเสร็จแล้ว, {name}! 🚀",
-          "เป้าหมายหลักของคุณในการเรียนภาษาอังกฤษคืออะไร?"
+          {
+            "text": "เกือบเสร็จแล้ว, {name}! 🚀",
+            "audio": "data/survey/audio/th/after_level_step_1.wav"
+          },
+          {
+            "text": "เป้าหมายหลักของคุณในการเรียนภาษาอังกฤษคืออะไร?",
+            "audio": "data/survey/audio/th/after_level_step_2.wav"
+          }
         ]
       },
       {
@@ -58,19 +100,45 @@
         "type": "single_choice",
         "save_as": "learning_goal",
         "options": [
-          { "value": "work",   "emoji": "💼", "label": "การทำงานและอาชีพ" },
-          { "value": "study",  "emoji": "📚", "label": "การศึกษาทางวิชาการ" },
-          { "value": "travel", "emoji": "✈️", "label": "การท่องเที่ยวและสำรวจ" },
-          { "value": "daily",  "emoji": "💬", "label": "การสนทนาประจำวัน" },
-          { "value": "ielts",  "emoji": "🎯", "label": "การสอบ IELTS / TOEFL" }
+          {
+            "value": "work",
+            "emoji": "💼",
+            "label": "การทำงานและอาชีพ"
+          },
+          {
+            "value": "study",
+            "emoji": "📚",
+            "label": "การศึกษาทางวิชาการ"
+          },
+          {
+            "value": "travel",
+            "emoji": "✈️",
+            "label": "การท่องเที่ยวและสำรวจ"
+          },
+          {
+            "value": "daily",
+            "emoji": "💬",
+            "label": "การสนทนาประจำวัน"
+          },
+          {
+            "value": "ielts",
+            "emoji": "🎯",
+            "label": "การสอบ IELTS / TOEFL"
+          }
         ]
       },
       {
         "id": "done",
         "type": "tutor_messages",
         "messages": [
-          "โปรไฟล์การเรียนของคุณพร้อมแล้ว, {name}! 🎉",
-          "ฉันกำลังปรับแต่งประสบการณ์ติวเตอร์ AI สำหรับคุณ…"
+          {
+            "text": "โปรไฟล์การเรียนของคุณพร้อมแล้ว, {name}! 🎉",
+            "audio": "data/survey/audio/th/done_step_1.wav"
+          },
+          {
+            "text": "ฉันกำลังปรับแต่งประสบการณ์ติวเตอร์ AI สำหรับคุณ…",
+            "audio": "data/survey/audio/th/done_step_2.wav"
+          }
         ]
       }
     ]

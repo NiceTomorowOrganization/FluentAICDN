@@ -14,8 +14,14 @@
         "id": "intro",
         "type": "tutor_messages",
         "messages": [
-          "Xin chào! 👋 Tôi là gia sư FluentAI của bạn.",
-          "Trước khi bắt đầu — tên bạn là gì?"
+          {
+            "text": "Xin chào! 👋 Tôi là gia sư FluentAI của bạn.",
+            "audio": "data/survey/audio/vi/intro_step_1.wav"
+          },
+          {
+            "text": "Trước khi bắt đầu — tên bạn là gì?",
+            "audio": "data/survey/audio/vi/intro_step_2.wav"
+          }
         ]
       },
       {
@@ -28,8 +34,14 @@
         "id": "after_name",
         "type": "tutor_messages",
         "messages": [
-          "Rất vui được gặp bạn, {name}! 😊",
-          "Trình độ tiếng Anh hiện tại của bạn?"
+          {
+            "text": "Rất vui được gặp bạn, {name}! 😊",
+            "audio": "data/survey/audio/vi/after_name_step_1.wav"
+          },
+          {
+            "text": "Trình độ tiếng Anh hiện tại của bạn?",
+            "audio": "data/survey/audio/vi/after_name_step_2.wav"
+          }
         ]
       },
       {
@@ -37,20 +49,50 @@
         "type": "single_choice",
         "save_as": "english_level",
         "options": [
-          { "value": "A1", "label": "A1", "description": "Mới bắt đầu" },
-          { "value": "A2", "label": "A2", "description": "Cơ bản" },
-          { "value": "B1", "label": "B1", "description": "Trung cấp" },
-          { "value": "B2", "label": "B2", "description": "Trung cao cấp" },
-          { "value": "C1", "label": "C1", "description": "Nâng cao" },
-          { "value": "C2", "label": "C2", "description": "Thành thạo" }
+          {
+            "value": "A1",
+            "label": "A1",
+            "description": "Mới bắt đầu"
+          },
+          {
+            "value": "A2",
+            "label": "A2",
+            "description": "Cơ bản"
+          },
+          {
+            "value": "B1",
+            "label": "B1",
+            "description": "Trung cấp"
+          },
+          {
+            "value": "B2",
+            "label": "B2",
+            "description": "Trung cao cấp"
+          },
+          {
+            "value": "C1",
+            "label": "C1",
+            "description": "Nâng cao"
+          },
+          {
+            "value": "C2",
+            "label": "C2",
+            "description": "Thành thạo"
+          }
         ]
       },
       {
         "id": "after_level",
         "type": "tutor_messages",
         "messages": [
-          "Sắp xong rồi, {name}! 🚀",
-          "Mục tiêu chính khi học tiếng Anh của bạn là gì?"
+          {
+            "text": "Sắp xong rồi, {name}! 🚀",
+            "audio": "data/survey/audio/vi/after_level_step_1.wav"
+          },
+          {
+            "text": "Mục tiêu chính khi học tiếng Anh của bạn là gì?",
+            "audio": "data/survey/audio/vi/after_level_step_2.wav"
+          }
         ]
       },
       {
@@ -58,19 +100,45 @@
         "type": "single_choice",
         "save_as": "learning_goal",
         "options": [
-          { "value": "work",   "emoji": "💼", "label": "Công việc & Sự nghiệp" },
-          { "value": "study",  "emoji": "📚", "label": "Học thuật" },
-          { "value": "travel", "emoji": "✈️", "label": "Du lịch & Khám phá" },
-          { "value": "daily",  "emoji": "💬", "label": "Hội thoại hàng ngày" },
-          { "value": "ielts",  "emoji": "🎯", "label": "Kỳ thi IELTS / TOEFL" }
+          {
+            "value": "work",
+            "emoji": "💼",
+            "label": "Công việc & Sự nghiệp"
+          },
+          {
+            "value": "study",
+            "emoji": "📚",
+            "label": "Học thuật"
+          },
+          {
+            "value": "travel",
+            "emoji": "✈️",
+            "label": "Du lịch & Khám phá"
+          },
+          {
+            "value": "daily",
+            "emoji": "💬",
+            "label": "Hội thoại hàng ngày"
+          },
+          {
+            "value": "ielts",
+            "emoji": "🎯",
+            "label": "Kỳ thi IELTS / TOEFL"
+          }
         ]
       },
       {
         "id": "done",
         "type": "tutor_messages",
         "messages": [
-          "Hồ sơ học tập của bạn đã sẵn sàng, {name}! 🎉",
-          "Tôi đang cá nhân hoá trải nghiệm gia sư AI cho bạn…"
+          {
+            "text": "Hồ sơ học tập của bạn đã sẵn sàng, {name}! 🎉",
+            "audio": "data/survey/audio/vi/done_step_1.wav"
+          },
+          {
+            "text": "Tôi đang cá nhân hoá trải nghiệm gia sư AI cho bạn…",
+            "audio": "data/survey/audio/vi/done_step_2.wav"
+          }
         ]
       }
     ]

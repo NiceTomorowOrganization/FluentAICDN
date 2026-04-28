@@ -14,8 +14,14 @@
         "id": "intro",
         "type": "tutor_messages",
         "messages": [
-          "¡Hola! 👋 Soy tu Tutor FluentAI.",
-          "Antes de empezar, ¿cuál es tu nombre?"
+          {
+            "text": "¡Hola! 👋 Soy tu Tutor FluentAI.",
+            "audio": "data/survey/audio/es/intro_step_1.wav"
+          },
+          {
+            "text": "Antes de empezar, ¿cuál es tu nombre?",
+            "audio": "data/survey/audio/es/intro_step_2.wav"
+          }
         ]
       },
       {
@@ -28,8 +34,14 @@
         "id": "after_name",
         "type": "tutor_messages",
         "messages": [
-          "¡Encantado de conocerte, {name}! 😊",
-          "¿Cuál es tu nivel actual de inglés?"
+          {
+            "text": "¡Encantado de conocerte, {name}! 😊",
+            "audio": "data/survey/audio/es/after_name_step_1.wav"
+          },
+          {
+            "text": "¿Cuál es tu nivel actual de inglés?",
+            "audio": "data/survey/audio/es/after_name_step_2.wav"
+          }
         ]
       },
       {
@@ -37,20 +49,50 @@
         "type": "single_choice",
         "save_as": "english_level",
         "options": [
-          { "value": "A1", "label": "A1", "description": "Principiante" },
-          { "value": "A2", "label": "A2", "description": "Elemental" },
-          { "value": "B1", "label": "B1", "description": "Intermedio" },
-          { "value": "B2", "label": "B2", "description": "Intermedio-Alto" },
-          { "value": "C1", "label": "C1", "description": "Avanzado" },
-          { "value": "C2", "label": "C2", "description": "Competente" }
+          {
+            "value": "A1",
+            "label": "A1",
+            "description": "Principiante"
+          },
+          {
+            "value": "A2",
+            "label": "A2",
+            "description": "Elemental"
+          },
+          {
+            "value": "B1",
+            "label": "B1",
+            "description": "Intermedio"
+          },
+          {
+            "value": "B2",
+            "label": "B2",
+            "description": "Intermedio-Alto"
+          },
+          {
+            "value": "C1",
+            "label": "C1",
+            "description": "Avanzado"
+          },
+          {
+            "value": "C2",
+            "label": "C2",
+            "description": "Competente"
+          }
         ]
       },
       {
         "id": "after_level",
         "type": "tutor_messages",
         "messages": [
-          "¡Casi listo, {name}! 🚀",
-          "¿Cuál es tu objetivo principal al aprender inglés?"
+          {
+            "text": "¡Casi listo, {name}! 🚀",
+            "audio": "data/survey/audio/es/after_level_step_1.wav"
+          },
+          {
+            "text": "¿Cuál es tu objetivo principal al aprender inglés?",
+            "audio": "data/survey/audio/es/after_level_step_2.wav"
+          }
         ]
       },
       {
@@ -58,19 +100,45 @@
         "type": "single_choice",
         "save_as": "learning_goal",
         "options": [
-          { "value": "work",   "emoji": "💼", "label": "Trabajo y carrera" },
-          { "value": "study",  "emoji": "📚", "label": "Estudio académico" },
-          { "value": "travel", "emoji": "✈️", "label": "Viajes y exploración" },
-          { "value": "daily",  "emoji": "💬", "label": "Conversación diaria" },
-          { "value": "ielts",  "emoji": "🎯", "label": "Examen IELTS / TOEFL" }
+          {
+            "value": "work",
+            "emoji": "💼",
+            "label": "Trabajo y carrera"
+          },
+          {
+            "value": "study",
+            "emoji": "📚",
+            "label": "Estudio académico"
+          },
+          {
+            "value": "travel",
+            "emoji": "✈️",
+            "label": "Viajes y exploración"
+          },
+          {
+            "value": "daily",
+            "emoji": "💬",
+            "label": "Conversación diaria"
+          },
+          {
+            "value": "ielts",
+            "emoji": "🎯",
+            "label": "Examen IELTS / TOEFL"
+          }
         ]
       },
       {
         "id": "done",
         "type": "tutor_messages",
         "messages": [
-          "¡Tu perfil de aprendizaje está listo, {name}! 🎉",
-          "Estoy personalizando tu experiencia de tutor IA ahora…"
+          {
+            "text": "¡Tu perfil de aprendizaje está listo, {name}! 🎉",
+            "audio": "data/survey/audio/es/done_step_1.wav"
+          },
+          {
+            "text": "Estoy personalizando tu experiencia de tutor IA ahora…",
+            "audio": "data/survey/audio/es/done_step_2.wav"
+          }
         ]
       }
     ]

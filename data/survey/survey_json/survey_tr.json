@@ -14,8 +14,14 @@
         "id": "intro",
         "type": "tutor_messages",
         "messages": [
-          "Merhaba! 👋 Ben FluentAI Eğitmeninizim.",
-          "Başlamadan önce — adınız nedir?"
+          {
+            "text": "Merhaba! 👋 Ben FluentAI Eğitmeninizim.",
+            "audio": "data/survey/audio/tr/intro_step_1.wav"
+          },
+          {
+            "text": "Başlamadan önce — adınız nedir?",
+            "audio": "data/survey/audio/tr/intro_step_2.wav"
+          }
         ]
       },
       {
@@ -28,8 +34,14 @@
         "id": "after_name",
         "type": "tutor_messages",
         "messages": [
-          "Tanıştığımıza memnun oldum, {name}! 😊",
-          "Mevcut İngilizce seviyeniz nedir?"
+          {
+            "text": "Tanıştığımıza memnun oldum, {name}! 😊",
+            "audio": "data/survey/audio/tr/after_name_step_1.wav"
+          },
+          {
+            "text": "Mevcut İngilizce seviyeniz nedir?",
+            "audio": "data/survey/audio/tr/after_name_step_2.wav"
+          }
         ]
       },
       {
@@ -37,20 +49,50 @@
         "type": "single_choice",
         "save_as": "english_level",
         "options": [
-          { "value": "A1", "label": "A1", "description": "Başlangıç" },
-          { "value": "A2", "label": "A2", "description": "Temel" },
-          { "value": "B1", "label": "B1", "description": "Orta" },
-          { "value": "B2", "label": "B2", "description": "Orta-Üst" },
-          { "value": "C1", "label": "C1", "description": "İleri" },
-          { "value": "C2", "label": "C2", "description": "Uzman" }
+          {
+            "value": "A1",
+            "label": "A1",
+            "description": "Başlangıç"
+          },
+          {
+            "value": "A2",
+            "label": "A2",
+            "description": "Temel"
+          },
+          {
+            "value": "B1",
+            "label": "B1",
+            "description": "Orta"
+          },
+          {
+            "value": "B2",
+            "label": "B2",
+            "description": "Orta-Üst"
+          },
+          {
+            "value": "C1",
+            "label": "C1",
+            "description": "İleri"
+          },
+          {
+            "value": "C2",
+            "label": "C2",
+            "description": "Uzman"
+          }
         ]
       },
       {
         "id": "after_level",
         "type": "tutor_messages",
         "messages": [
-          "Neredeyse bitti, {name}! 🚀",
-          "İngilizce öğrenmek için ana hedefiniz nedir?"
+          {
+            "text": "Neredeyse bitti, {name}! 🚀",
+            "audio": "data/survey/audio/tr/after_level_step_1.wav"
+          },
+          {
+            "text": "İngilizce öğrenmek için ana hedefiniz nedir?",
+            "audio": "data/survey/audio/tr/after_level_step_2.wav"
+          }
         ]
       },
       {
@@ -58,19 +100,45 @@
         "type": "single_choice",
         "save_as": "learning_goal",
         "options": [
-          { "value": "work",   "emoji": "💼", "label": "İş ve Kariyer" },
-          { "value": "study",  "emoji": "📚", "label": "Akademik Çalışma" },
-          { "value": "travel", "emoji": "✈️", "label": "Seyahat ve Keşif" },
-          { "value": "daily",  "emoji": "💬", "label": "Günlük Konuşma" },
-          { "value": "ielts",  "emoji": "🎯", "label": "IELTS / TOEFL Sınavı" }
+          {
+            "value": "work",
+            "emoji": "💼",
+            "label": "İş ve Kariyer"
+          },
+          {
+            "value": "study",
+            "emoji": "📚",
+            "label": "Akademik Çalışma"
+          },
+          {
+            "value": "travel",
+            "emoji": "✈️",
+            "label": "Seyahat ve Keşif"
+          },
+          {
+            "value": "daily",
+            "emoji": "💬",
+            "label": "Günlük Konuşma"
+          },
+          {
+            "value": "ielts",
+            "emoji": "🎯",
+            "label": "IELTS / TOEFL Sınavı"
+          }
         ]
       },
       {
         "id": "done",
         "type": "tutor_messages",
         "messages": [
-          "Öğrenme profiliniz hazır, {name}! 🎉",
-          "YZ eğitmen deneyiminizi şimdi kişiselleştiriyorum…"
+          {
+            "text": "Öğrenme profiliniz hazır, {name}! 🎉",
+            "audio": "data/survey/audio/tr/done_step_1.wav"
+          },
+          {
+            "text": "YZ eğitmen deneyiminizi şimdi kişiselleştiriyorum…",
+            "audio": "data/survey/audio/tr/done_step_2.wav"
+          }
         ]
       }
     ]

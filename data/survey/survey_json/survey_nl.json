@@ -14,8 +14,14 @@
         "id": "intro",
         "type": "tutor_messages",
         "messages": [
-          "Hallo! 👋 Ik ben je FluentAI tutor.",
-          "Voor we beginnen — wat is je naam?"
+          {
+            "text": "Hallo! 👋 Ik ben je FluentAI tutor.",
+            "audio": "data/survey/audio/nl/intro_step_1.wav"
+          },
+          {
+            "text": "Voor we beginnen — wat is je naam?",
+            "audio": "data/survey/audio/nl/intro_step_2.wav"
+          }
         ]
       },
       {
@@ -28,8 +34,14 @@
         "id": "after_name",
         "type": "tutor_messages",
         "messages": [
-          "Leuk je te ontmoeten, {name}! 😊",
-          "Wat is je huidige Engelse niveau?"
+          {
+            "text": "Leuk je te ontmoeten, {name}! 😊",
+            "audio": "data/survey/audio/nl/after_name_step_1.wav"
+          },
+          {
+            "text": "Wat is je huidige Engelse niveau?",
+            "audio": "data/survey/audio/nl/after_name_step_2.wav"
+          }
         ]
       },
       {
@@ -37,20 +49,50 @@
         "type": "single_choice",
         "save_as": "english_level",
         "options": [
-          { "value": "A1", "label": "A1", "description": "Beginner" },
-          { "value": "A2", "label": "A2", "description": "Elementair" },
-          { "value": "B1", "label": "B1", "description": "Gemiddeld" },
-          { "value": "B2", "label": "B2", "description": "Hoger gemiddeld" },
-          { "value": "C1", "label": "C1", "description": "Gevorderd" },
-          { "value": "C2", "label": "C2", "description": "Vaardig" }
+          {
+            "value": "A1",
+            "label": "A1",
+            "description": "Beginner"
+          },
+          {
+            "value": "A2",
+            "label": "A2",
+            "description": "Elementair"
+          },
+          {
+            "value": "B1",
+            "label": "B1",
+            "description": "Gemiddeld"
+          },
+          {
+            "value": "B2",
+            "label": "B2",
+            "description": "Hoger gemiddeld"
+          },
+          {
+            "value": "C1",
+            "label": "C1",
+            "description": "Gevorderd"
+          },
+          {
+            "value": "C2",
+            "label": "C2",
+            "description": "Vaardig"
+          }
         ]
       },
       {
         "id": "after_level",
         "type": "tutor_messages",
         "messages": [
-          "Bijna klaar, {name}! 🚀",
-          "Wat is je hoofddoel met Engels leren?"
+          {
+            "text": "Bijna klaar, {name}! 🚀",
+            "audio": "data/survey/audio/nl/after_level_step_1.wav"
+          },
+          {
+            "text": "Wat is je hoofddoel met Engels leren?",
+            "audio": "data/survey/audio/nl/after_level_step_2.wav"
+          }
         ]
       },
       {
@@ -58,19 +100,45 @@
         "type": "single_choice",
         "save_as": "learning_goal",
         "options": [
-          { "value": "work",   "emoji": "💼", "label": "Werk & carrière" },
-          { "value": "study",  "emoji": "📚", "label": "Academische studie" },
-          { "value": "travel", "emoji": "✈️", "label": "Reizen & ontdekken" },
-          { "value": "daily",  "emoji": "💬", "label": "Dagelijkse gesprekken" },
-          { "value": "ielts",  "emoji": "🎯", "label": "IELTS / TOEFL examen" }
+          {
+            "value": "work",
+            "emoji": "💼",
+            "label": "Werk & carrière"
+          },
+          {
+            "value": "study",
+            "emoji": "📚",
+            "label": "Academische studie"
+          },
+          {
+            "value": "travel",
+            "emoji": "✈️",
+            "label": "Reizen & ontdekken"
+          },
+          {
+            "value": "daily",
+            "emoji": "💬",
+            "label": "Dagelijkse gesprekken"
+          },
+          {
+            "value": "ielts",
+            "emoji": "🎯",
+            "label": "IELTS / TOEFL examen"
+          }
         ]
       },
       {
         "id": "done",
         "type": "tutor_messages",
         "messages": [
-          "Je leerprofiel is klaar, {name}! 🎉",
-          "Ik personaliseer nu je AI-tutor ervaring…"
+          {
+            "text": "Je leerprofiel is klaar, {name}! 🎉",
+            "audio": "data/survey/audio/nl/done_step_1.wav"
+          },
+          {
+            "text": "Ik personaliseer nu je AI-tutor ervaring…",
+            "audio": "data/survey/audio/nl/done_step_2.wav"
+          }
         ]
       }
     ]
