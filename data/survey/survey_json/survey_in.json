@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "locale": "id",
+  "survey": {
+    "tutor": {
+      "name": "Tutor FluentAI",
+      "subtitle": "Pelatih bahasa Inggris pribadi Anda"
+    },
+    "ui": {
+      "show_all_languages": "Tampilkan semua bahasa"
+    },
+    "steps": [
+      {
+        "id": "intro",
+        "type": "tutor_messages",
+        "messages": [
+          "Halo! 👋 Saya tutor FluentAI Anda.",
+          "Sebelum kita mulai — siapa nama Anda?"
+        ]
+      },
+      {
+        "id": "collect_name",
+        "type": "text_input",
+        "placeholder": "Ketik nama Anda…",
+        "save_as": "name"
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          "Senang bertemu Anda, {name}! 😊",
+          "Apa tingkat bahasa Inggris Anda saat ini?"
+        ]
+      },
+      {
+        "id": "collect_level",
+        "type": "single_choice",
+        "save_as": "english_level",
+        "options": [
+          { "value": "A1", "label": "A1", "description": "Pemula" },
+          { "value": "A2", "label": "A2", "description": "Dasar" },
+          { "value": "B1", "label": "B1", "description": "Menengah" },
+          { "value": "B2", "label": "B2", "description": "Menengah-atas" },
+          { "value": "C1", "label": "C1", "description": "Mahir" },
+          { "value": "C2", "label": "C2", "description": "Sangat mahir" }
+        ]
+      },
+      {
+        "id": "after_level",
+        "type": "tutor_messages",
+        "messages": [
+          "Hampir selesai, {name}! 🚀",
+          "Apa tujuan utama Anda belajar bahasa Inggris?"
+        ]
+      },
+      {
+        "id": "collect_goal",
+        "type": "single_choice",
+        "save_as": "learning_goal",
+        "options": [
+          { "value": "work",   "emoji": "💼", "label": "Pekerjaan & karier" },
+          { "value": "study",  "emoji": "📚", "label": "Studi akademik" },
+          { "value": "travel", "emoji": "✈️", "label": "Perjalanan & eksplorasi" },
+          { "value": "daily",  "emoji": "💬", "label": "Percakapan sehari-hari" },
+          { "value": "ielts",  "emoji": "🎯", "label": "Ujian IELTS / TOEFL" }
+        ]
+      },
+      {
+        "id": "done",
+        "type": "tutor_messages",
+        "messages": [
+          "Profil belajar Anda siap, {name}! 🎉",
+          "Saya sedang mempersonalisasi pengalaman tutor AI Anda…"
+        ]
+      }
+    ]
+  }
+}

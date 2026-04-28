@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "locale": "ko",
+  "survey": {
+    "tutor": {
+      "name": "FluentAI 튜터",
+      "subtitle": "당신의 개인 영어 코치"
+    },
+    "ui": {
+      "show_all_languages": "모든 언어 표시"
+    },
+    "steps": [
+      {
+        "id": "intro",
+        "type": "tutor_messages",
+        "messages": [
+          "안녕하세요! 👋 저는 당신의 FluentAI 튜터입니다.",
+          "시작하기 전에 — 이름이 무엇인가요?"
+        ]
+      },
+      {
+        "id": "collect_name",
+        "type": "text_input",
+        "placeholder": "이름을 입력하세요…",
+        "save_as": "name"
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          "만나서 반갑습니다, {name}님! 😊",
+          "현재 영어 수준이 어떻게 되시나요?"
+        ]
+      },
+      {
+        "id": "collect_level",
+        "type": "single_choice",
+        "save_as": "english_level",
+        "options": [
+          { "value": "A1", "label": "A1", "description": "초보" },
+          { "value": "A2", "label": "A2", "description": "초급" },
+          { "value": "B1", "label": "B1", "description": "중급" },
+          { "value": "B2", "label": "B2", "description": "중상급" },
+          { "value": "C1", "label": "C1", "description": "고급" },
+          { "value": "C2", "label": "C2", "description": "유창" }
+        ]
+      },
+      {
+        "id": "after_level",
+        "type": "tutor_messages",
+        "messages": [
+          "거의 다 됐어요, {name}님! 🚀",
+          "영어를 배우는 주된 목표가 무엇인가요?"
+        ]
+      },
+      {
+        "id": "collect_goal",
+        "type": "single_choice",
+        "save_as": "learning_goal",
+        "options": [
+          { "value": "work",   "emoji": "💼", "label": "업무와 경력" },
+          { "value": "study",  "emoji": "📚", "label": "학업 연구" },
+          { "value": "travel", "emoji": "✈️", "label": "여행과 탐험" },
+          { "value": "daily",  "emoji": "💬", "label": "일상 대화" },
+          { "value": "ielts",  "emoji": "🎯", "label": "IELTS / TOEFL 시험" }
+        ]
+      },
+      {
+        "id": "done",
+        "type": "tutor_messages",
+        "messages": [
+          "학습 프로필이 준비되었습니다, {name}님! 🎉",
+          "AI 튜터 경험을 맞춤화하고 있습니다…"
+        ]
+      }
+    ]
+  }
+}

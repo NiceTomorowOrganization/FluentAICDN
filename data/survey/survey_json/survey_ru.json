@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "locale": "ru",
+  "survey": {
+    "tutor": {
+      "name": "FluentAI Репетитор",
+      "subtitle": "Ваш личный тренер по английскому"
+    },
+    "ui": {
+      "show_all_languages": "Показать все языки"
+    },
+    "steps": [
+      {
+        "id": "intro",
+        "type": "tutor_messages",
+        "messages": [
+          "Привет! 👋 Я ваш FluentAI Репетитор.",
+          "Прежде чем начать — как вас зовут?"
+        ]
+      },
+      {
+        "id": "collect_name",
+        "type": "text_input",
+        "placeholder": "Введите ваше имя…",
+        "save_as": "name"
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          "Приятно познакомиться, {name}! 😊",
+          "Какой ваш текущий уровень английского?"
+        ]
+      },
+      {
+        "id": "collect_level",
+        "type": "single_choice",
+        "save_as": "english_level",
+        "options": [
+          { "value": "A1", "label": "A1", "description": "Начинающий" },
+          { "value": "A2", "label": "A2", "description": "Базовый" },
+          { "value": "B1", "label": "B1", "description": "Средний" },
+          { "value": "B2", "label": "B2", "description": "Выше среднего" },
+          { "value": "C1", "label": "C1", "description": "Продвинутый" },
+          { "value": "C2", "label": "C2", "description": "Свободное владение" }
+        ]
+      },
+      {
+        "id": "after_level",
+        "type": "tutor_messages",
+        "messages": [
+          "Почти готово, {name}! 🚀",
+          "Какова ваша главная цель изучения английского?"
+        ]
+      },
+      {
+        "id": "collect_goal",
+        "type": "single_choice",
+        "save_as": "learning_goal",
+        "options": [
+          { "value": "work",   "emoji": "💼", "label": "Работа и карьера" },
+          { "value": "study",  "emoji": "📚", "label": "Академическое изучение" },
+          { "value": "travel", "emoji": "✈️", "label": "Путешествия и исследования" },
+          { "value": "daily",  "emoji": "💬", "label": "Повседневный разговор" },
+          { "value": "ielts",  "emoji": "🎯", "label": "Экзамен IELTS / TOEFL" }
+        ]
+      },
+      {
+        "id": "done",
+        "type": "tutor_messages",
+        "messages": [
+          "Ваш профиль обучения готов, {name}! 🎉",
+          "Я персонализирую ваш опыт ИИ-репетитора прямо сейчас…"
+        ]
+      }
+    ]
+  }
+}

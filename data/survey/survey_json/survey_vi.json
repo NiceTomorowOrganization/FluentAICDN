@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "locale": "vi",
+  "survey": {
+    "tutor": {
+      "name": "FluentAI Tutor",
+      "subtitle": "Huấn luyện viên tiếng Anh cá nhân"
+    },
+    "ui": {
+      "show_all_languages": "Hiện tất cả ngôn ngữ"
+    },
+    "steps": [
+      {
+        "id": "intro",
+        "type": "tutor_messages",
+        "messages": [
+          "Xin chào! 👋 Tôi là gia sư FluentAI của bạn.",
+          "Trước khi bắt đầu — tên bạn là gì?"
+        ]
+      },
+      {
+        "id": "collect_name",
+        "type": "text_input",
+        "placeholder": "Nhập tên của bạn…",
+        "save_as": "name"
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          "Rất vui được gặp bạn, {name}! 😊",
+          "Trình độ tiếng Anh hiện tại của bạn?"
+        ]
+      },
+      {
+        "id": "collect_level",
+        "type": "single_choice",
+        "save_as": "english_level",
+        "options": [
+          { "value": "A1", "label": "A1", "description": "Mới bắt đầu" },
+          { "value": "A2", "label": "A2", "description": "Cơ bản" },
+          { "value": "B1", "label": "B1", "description": "Trung cấp" },
+          { "value": "B2", "label": "B2", "description": "Trung cao cấp" },
+          { "value": "C1", "label": "C1", "description": "Nâng cao" },
+          { "value": "C2", "label": "C2", "description": "Thành thạo" }
+        ]
+      },
+      {
+        "id": "after_level",
+        "type": "tutor_messages",
+        "messages": [
+          "Sắp xong rồi, {name}! 🚀",
+          "Mục tiêu chính khi học tiếng Anh của bạn là gì?"
+        ]
+      },
+      {
+        "id": "collect_goal",
+        "type": "single_choice",
+        "save_as": "learning_goal",
+        "options": [
+          { "value": "work",   "emoji": "💼", "label": "Công việc & Sự nghiệp" },
+          { "value": "study",  "emoji": "📚", "label": "Học thuật" },
+          { "value": "travel", "emoji": "✈️", "label": "Du lịch & Khám phá" },
+          { "value": "daily",  "emoji": "💬", "label": "Hội thoại hàng ngày" },
+          { "value": "ielts",  "emoji": "🎯", "label": "Kỳ thi IELTS / TOEFL" }
+        ]
+      },
+      {
+        "id": "done",
+        "type": "tutor_messages",
+        "messages": [
+          "Hồ sơ học tập của bạn đã sẵn sàng, {name}! 🎉",
+          "Tôi đang cá nhân hoá trải nghiệm gia sư AI cho bạn…"
+        ]
+      }
+    ]
+  }
+}

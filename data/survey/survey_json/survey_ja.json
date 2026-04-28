@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "locale": "ja",
+  "survey": {
+    "tutor": {
+      "name": "FluentAIチューター",
+      "subtitle": "あなた専用の英語コーチ"
+    },
+    "ui": {
+      "show_all_languages": "すべての言語を表示"
+    },
+    "steps": [
+      {
+        "id": "intro",
+        "type": "tutor_messages",
+        "messages": [
+          "こんにちは! 👋 私はあなたのFluentAIチューターです。",
+          "始める前に — お名前は何ですか?"
+        ]
+      },
+      {
+        "id": "collect_name",
+        "type": "text_input",
+        "placeholder": "名前を入力…",
+        "save_as": "name"
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          "はじめまして、{name}さん! 😊",
+          "現在の英語レベルはどれくらいですか?"
+        ]
+      },
+      {
+        "id": "collect_level",
+        "type": "single_choice",
+        "save_as": "english_level",
+        "options": [
+          { "value": "A1", "label": "A1", "description": "初心者" },
+          { "value": "A2", "label": "A2", "description": "初級" },
+          { "value": "B1", "label": "B1", "description": "中級" },
+          { "value": "B2", "label": "B2", "description": "中上級" },
+          { "value": "C1", "label": "C1", "description": "上級" },
+          { "value": "C2", "label": "C2", "description": "熟達" }
+        ]
+      },
+      {
+        "id": "after_level",
+        "type": "tutor_messages",
+        "messages": [
+          "もうすぐ完了です、{name}さん! 🚀",
+          "英語を学ぶ主な目的は何ですか?"
+        ]
+      },
+      {
+        "id": "collect_goal",
+        "type": "single_choice",
+        "save_as": "learning_goal",
+        "options": [
+          { "value": "work",   "emoji": "💼", "label": "仕事とキャリア" },
+          { "value": "study",  "emoji": "📚", "label": "学術研究" },
+          { "value": "travel", "emoji": "✈️", "label": "旅行と探検" },
+          { "value": "daily",  "emoji": "💬", "label": "日常会話" },
+          { "value": "ielts",  "emoji": "🎯", "label": "IELTS / TOEFL試験" }
+        ]
+      },
+      {
+        "id": "done",
+        "type": "tutor_messages",
+        "messages": [
+          "学習プロフィールの準備ができました、{name}さん! 🎉",
+          "AIチューター体験をパーソナライズしています…"
+        ]
+      }
+    ]
+  }
+}

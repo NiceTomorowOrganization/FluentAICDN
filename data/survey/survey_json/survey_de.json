@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "locale": "de",
+  "survey": {
+    "tutor": {
+      "name": "FluentAI-Tutor",
+      "subtitle": "Ihr persönlicher Englisch-Coach"
+    },
+    "ui": {
+      "show_all_languages": "Alle Sprachen anzeigen"
+    },
+    "steps": [
+      {
+        "id": "intro",
+        "type": "tutor_messages",
+        "messages": [
+          "Hallo! 👋 Ich bin Ihr FluentAI-Tutor.",
+          "Bevor wir beginnen — wie heißen Sie?"
+        ]
+      },
+      {
+        "id": "collect_name",
+        "type": "text_input",
+        "placeholder": "Geben Sie Ihren Namen ein…",
+        "save_as": "name"
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          "Schön Sie kennenzulernen, {name}! 😊",
+          "Wie ist Ihr aktuelles Englischniveau?"
+        ]
+      },
+      {
+        "id": "collect_level",
+        "type": "single_choice",
+        "save_as": "english_level",
+        "options": [
+          { "value": "A1", "label": "A1", "description": "Anfänger" },
+          { "value": "A2", "label": "A2", "description": "Grundkenntnisse" },
+          { "value": "B1", "label": "B1", "description": "Mittelstufe" },
+          { "value": "B2", "label": "B2", "description": "Obere Mittelstufe" },
+          { "value": "C1", "label": "C1", "description": "Fortgeschritten" },
+          { "value": "C2", "label": "C2", "description": "Beherrschung" }
+        ]
+      },
+      {
+        "id": "after_level",
+        "type": "tutor_messages",
+        "messages": [
+          "Fast fertig, {name}! 🚀",
+          "Was ist Ihr Hauptziel beim Englischlernen?"
+        ]
+      },
+      {
+        "id": "collect_goal",
+        "type": "single_choice",
+        "save_as": "learning_goal",
+        "options": [
+          { "value": "work",   "emoji": "💼", "label": "Beruf und Karriere" },
+          { "value": "study",  "emoji": "📚", "label": "Akademisches Studium" },
+          { "value": "travel", "emoji": "✈️", "label": "Reisen und Erkundung" },
+          { "value": "daily",  "emoji": "💬", "label": "Alltagsgespräche" },
+          { "value": "ielts",  "emoji": "🎯", "label": "IELTS / TOEFL Prüfung" }
+        ]
+      },
+      {
+        "id": "done",
+        "type": "tutor_messages",
+        "messages": [
+          "Ihr Lernprofil ist bereit, {name}! 🎉",
+          "Ich personalisiere jetzt Ihre KI-Tutor-Erfahrung…"
+        ]
+      }
+    ]
+  }
+}

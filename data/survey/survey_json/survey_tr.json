@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "locale": "tr",
+  "survey": {
+    "tutor": {
+      "name": "FluentAI Eğitmeni",
+      "subtitle": "Kişisel İngilizce koçunuz"
+    },
+    "ui": {
+      "show_all_languages": "Tüm dilleri göster"
+    },
+    "steps": [
+      {
+        "id": "intro",
+        "type": "tutor_messages",
+        "messages": [
+          "Merhaba! 👋 Ben FluentAI Eğitmeninizim.",
+          "Başlamadan önce — adınız nedir?"
+        ]
+      },
+      {
+        "id": "collect_name",
+        "type": "text_input",
+        "placeholder": "Adınızı yazın…",
+        "save_as": "name"
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          "Tanıştığımıza memnun oldum, {name}! 😊",
+          "Mevcut İngilizce seviyeniz nedir?"
+        ]
+      },
+      {
+        "id": "collect_level",
+        "type": "single_choice",
+        "save_as": "english_level",
+        "options": [
+          { "value": "A1", "label": "A1", "description": "Başlangıç" },
+          { "value": "A2", "label": "A2", "description": "Temel" },
+          { "value": "B1", "label": "B1", "description": "Orta" },
+          { "value": "B2", "label": "B2", "description": "Orta-Üst" },
+          { "value": "C1", "label": "C1", "description": "İleri" },
+          { "value": "C2", "label": "C2", "description": "Uzman" }
+        ]
+      },
+      {
+        "id": "after_level",
+        "type": "tutor_messages",
+        "messages": [
+          "Neredeyse bitti, {name}! 🚀",
+          "İngilizce öğrenmek için ana hedefiniz nedir?"
+        ]
+      },
+      {
+        "id": "collect_goal",
+        "type": "single_choice",
+        "save_as": "learning_goal",
+        "options": [
+          { "value": "work",   "emoji": "💼", "label": "İş ve Kariyer" },
+          { "value": "study",  "emoji": "📚", "label": "Akademik Çalışma" },
+          { "value": "travel", "emoji": "✈️", "label": "Seyahat ve Keşif" },
+          { "value": "daily",  "emoji": "💬", "label": "Günlük Konuşma" },
+          { "value": "ielts",  "emoji": "🎯", "label": "IELTS / TOEFL Sınavı" }
+        ]
+      },
+      {
+        "id": "done",
+        "type": "tutor_messages",
+        "messages": [
+          "Öğrenme profiliniz hazır, {name}! 🎉",
+          "YZ eğitmen deneyiminizi şimdi kişiselleştiriyorum…"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "locale": "uz",
+  "survey": {
+    "tutor": {
+      "name": "FluentAI o'qituvchi",
+      "subtitle": "Sizning shaxsiy ingliz tili murabbiyingiz"
+    },
+    "ui": {
+      "show_all_languages": "Barcha tillarni ko'rsatish"
+    },
+    "steps": [
+      {
+        "id": "intro",
+        "type": "tutor_messages",
+        "messages": [
+          "Salom! 👋 Men sizning FluentAI o'qituvchingizman.",
+          "Boshlashdan oldin — ismingiz nima?"
+        ]
+      },
+      {
+        "id": "collect_name",
+        "type": "text_input",
+        "placeholder": "Ismingizni yozing…",
+        "save_as": "name"
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          "Tanishganimdan xursandman, {name}! 😊",
+          "Hozirgi ingliz tili darajangiz qanday?"
+        ]
+      },
+      {
+        "id": "collect_level",
+        "type": "single_choice",
+        "save_as": "english_level",
+        "options": [
+          { "value": "A1", "label": "A1", "description": "Boshlovchi" },
+          { "value": "A2", "label": "A2", "description": "Boshlang'ich" },
+          { "value": "B1", "label": "B1", "description": "O'rta" },
+          { "value": "B2", "label": "B2", "description": "O'rta-yuqori" },
+          { "value": "C1", "label": "C1", "description": "Yuqori" },
+          { "value": "C2", "label": "C2", "description": "Mukammal" }
+        ]
+      },
+      {
+        "id": "after_level",
+        "type": "tutor_messages",
+        "messages": [
+          "Deyarli tugadi, {name}! 🚀",
+          "Ingliz tilini o'rganishdan asosiy maqsadingiz nima?"
+        ]
+      },
+      {
+        "id": "collect_goal",
+        "type": "single_choice",
+        "save_as": "learning_goal",
+        "options": [
+          { "value": "work",   "emoji": "💼", "label": "Ish & karyera" },
+          { "value": "study",  "emoji": "📚", "label": "Akademik o'qish" },
+          { "value": "travel", "emoji": "✈️", "label": "Sayohat & tadqiqot" },
+          { "value": "daily",  "emoji": "💬", "label": "Kundalik suhbatlar" },
+          { "value": "ielts",  "emoji": "🎯", "label": "IELTS / TOEFL imtihoni" }
+        ]
+      },
+      {
+        "id": "done",
+        "type": "tutor_messages",
+        "messages": [
+          "O'rganish profilingiz tayyor, {name}! 🎉",
+          "Hozir AI o'qituvchi tajribangizni shaxsiylashtiryapman…"
+        ]
+      }
+    ]
+  }
+}

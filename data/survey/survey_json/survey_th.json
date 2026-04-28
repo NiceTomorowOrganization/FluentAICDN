@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "locale": "th",
+  "survey": {
+    "tutor": {
+      "name": "ติวเตอร์ FluentAI",
+      "subtitle": "โค้ชภาษาอังกฤษส่วนตัวของคุณ"
+    },
+    "ui": {
+      "show_all_languages": "แสดงทุกภาษา"
+    },
+    "steps": [
+      {
+        "id": "intro",
+        "type": "tutor_messages",
+        "messages": [
+          "สวัสดี! 👋 ฉันคือติวเตอร์ FluentAI ของคุณ",
+          "ก่อนเริ่ม — คุณชื่ออะไร?"
+        ]
+      },
+      {
+        "id": "collect_name",
+        "type": "text_input",
+        "placeholder": "พิมพ์ชื่อของคุณ…",
+        "save_as": "name"
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          "ยินดีที่ได้รู้จัก, {name}! 😊",
+          "ระดับภาษาอังกฤษปัจจุบันของคุณคืออะไร?"
+        ]
+      },
+      {
+        "id": "collect_level",
+        "type": "single_choice",
+        "save_as": "english_level",
+        "options": [
+          { "value": "A1", "label": "A1", "description": "ผู้เริ่มต้น" },
+          { "value": "A2", "label": "A2", "description": "พื้นฐาน" },
+          { "value": "B1", "label": "B1", "description": "ปานกลาง" },
+          { "value": "B2", "label": "B2", "description": "ปานกลาง-สูง" },
+          { "value": "C1", "label": "C1", "description": "สูง" },
+          { "value": "C2", "label": "C2", "description": "เชี่ยวชาญ" }
+        ]
+      },
+      {
+        "id": "after_level",
+        "type": "tutor_messages",
+        "messages": [
+          "เกือบเสร็จแล้ว, {name}! 🚀",
+          "เป้าหมายหลักของคุณในการเรียนภาษาอังกฤษคืออะไร?"
+        ]
+      },
+      {
+        "id": "collect_goal",
+        "type": "single_choice",
+        "save_as": "learning_goal",
+        "options": [
+          { "value": "work",   "emoji": "💼", "label": "การทำงานและอาชีพ" },
+          { "value": "study",  "emoji": "📚", "label": "การศึกษาทางวิชาการ" },
+          { "value": "travel", "emoji": "✈️", "label": "การท่องเที่ยวและสำรวจ" },
+          { "value": "daily",  "emoji": "💬", "label": "การสนทนาประจำวัน" },
+          { "value": "ielts",  "emoji": "🎯", "label": "การสอบ IELTS / TOEFL" }
+        ]
+      },
+      {
+        "id": "done",
+        "type": "tutor_messages",
+        "messages": [
+          "โปรไฟล์การเรียนของคุณพร้อมแล้ว, {name}! 🎉",
+          "ฉันกำลังปรับแต่งประสบการณ์ติวเตอร์ AI สำหรับคุณ…"
+        ]
+      }
+    ]
+  }
+}

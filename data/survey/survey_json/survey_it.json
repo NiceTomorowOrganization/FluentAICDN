@@ -1,0 +1,78 @@
+{
+  "version": 2,
+  "locale": "it",
+  "survey": {
+    "tutor": {
+      "name": "Tutor FluentAI",
+      "subtitle": "Il tuo coach personale di inglese"
+    },
+    "ui": {
+      "show_all_languages": "Mostra tutte le lingue"
+    },
+    "steps": [
+      {
+        "id": "intro",
+        "type": "tutor_messages",
+        "messages": [
+          "Ciao! 👋 Sono il tuo Tutor FluentAI.",
+          "Prima di iniziare — come ti chiami?"
+        ]
+      },
+      {
+        "id": "collect_name",
+        "type": "text_input",
+        "placeholder": "Inserisci il tuo nome…",
+        "save_as": "name"
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          "Piacere di conoscerti, {name}! 😊",
+          "Qual è il tuo livello attuale di inglese?"
+        ]
+      },
+      {
+        "id": "collect_level",
+        "type": "single_choice",
+        "save_as": "english_level",
+        "options": [
+          { "value": "A1", "label": "A1", "description": "Principiante" },
+          { "value": "A2", "label": "A2", "description": "Elementare" },
+          { "value": "B1", "label": "B1", "description": "Intermedio" },
+          { "value": "B2", "label": "B2", "description": "Intermedio-Avanzato" },
+          { "value": "C1", "label": "C1", "description": "Avanzato" },
+          { "value": "C2", "label": "C2", "description": "Padronanza" }
+        ]
+      },
+      {
+        "id": "after_level",
+        "type": "tutor_messages",
+        "messages": [
+          "Quasi finito, {name}! 🚀",
+          "Qual è il tuo obiettivo principale per imparare l'inglese?"
+        ]
+      },
+      {
+        "id": "collect_goal",
+        "type": "single_choice",
+        "save_as": "learning_goal",
+        "options": [
+          { "value": "work",   "emoji": "💼", "label": "Lavoro e carriera" },
+          { "value": "study",  "emoji": "📚", "label": "Studio accademico" },
+          { "value": "travel", "emoji": "✈️", "label": "Viaggi ed esplorazione" },
+          { "value": "daily",  "emoji": "💬", "label": "Conversazione quotidiana" },
+          { "value": "ielts",  "emoji": "🎯", "label": "Esame IELTS / TOEFL" }
+        ]
+      },
+      {
+        "id": "done",
+        "type": "tutor_messages",
+        "messages": [
+          "Il tuo profilo di apprendimento è pronto, {name}! 🎉",
+          "Sto personalizzando la tua esperienza di tutor AI ora…"
+        ]
+      }
+    ]
+  }
+}
