@@ -20,7 +20,7 @@
           },
           {
             "text": "Bevor wir beginnen — wie heißen Sie?",
-            "audio": "data/survey/audio/de/intro_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -31,16 +31,87 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           {
             "text": "Schön Sie kennenzulernen, {name}! 😊",
-            "audio": "data/survey/audio/de/after_name_step_1.wav"
+            "audio": ""
+          },
+          {
+            "text": "Was ist Ihre Muttersprache?",
+            "audio": ""
+          }
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          {
+            "value": "ar",
+            "emoji": "🇸🇦",
+            "label": "Arabisch"
+          },
+          {
+            "value": "zh",
+            "emoji": "🇨🇳",
+            "label": "Chinesisch"
+          },
+          {
+            "value": "fr",
+            "emoji": "🇫🇷",
+            "label": "Französisch"
+          },
+          {
+            "value": "hi",
+            "emoji": "🇮🇳",
+            "label": "Hindi"
+          },
+          {
+            "value": "ja",
+            "emoji": "🇯🇵",
+            "label": "Japanisch"
+          },
+          {
+            "value": "ko",
+            "emoji": "🇰🇷",
+            "label": "Koreanisch"
+          },
+          {
+            "value": "pt",
+            "emoji": "🇧🇷",
+            "label": "Portugiesisch"
+          },
+          {
+            "value": "ru",
+            "emoji": "🇷🇺",
+            "label": "Russisch"
+          },
+          {
+            "value": "es",
+            "emoji": "🇪🇸",
+            "label": "Spanisch"
+          },
+          {
+            "value": "vi",
+            "emoji": "🇻🇳",
+            "label": "Vietnamesisch"
+          }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          {
+            "text": "Gut! Los geht's 🚀",
+            "audio": ""
           },
           {
             "text": "Wie ist Ihr aktuelles Englischniveau?",
-            "audio": "data/survey/audio/de/after_name_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -87,11 +158,11 @@
         "messages": [
           {
             "text": "Fast fertig, {name}! 🚀",
-            "audio": "data/survey/audio/de/after_level_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Was ist Ihr Hauptziel beim Englischlernen?",
-            "audio": "data/survey/audio/de/after_level_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -133,11 +204,11 @@
         "messages": [
           {
             "text": "Ihr Lernprofil ist bereit, {name}! 🎉",
-            "audio": "data/survey/audio/de/done_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Ich personalisiere jetzt Ihre KI-Tutor-Erfahrung…",
-            "audio": "data/survey/audio/de/done_step_2.wav"
+            "audio": ""
           }
         ]
       }

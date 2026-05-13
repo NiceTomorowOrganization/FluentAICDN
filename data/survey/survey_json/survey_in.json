@@ -16,11 +16,11 @@
         "messages": [
           {
             "text": "Halo! 👋 Saya tutor FluentAI Anda.",
-            "audio": "data/survey/audio/in/intro_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Sebelum kita mulai — siapa nama Anda?",
-            "audio": "data/survey/audio/in/intro_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -31,16 +31,47 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           {
             "text": "Senang bertemu Anda, {name}! 😊",
-            "audio": "data/survey/audio/in/after_name_step_1.wav"
+            "audio": ""
+          },
+          {
+            "text": "Apa bahasa ibu Anda?",
+            "audio": ""
+          }
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          { "value": "ar", "emoji": "🇸🇦", "label": "Arab" },
+          { "value": "zh", "emoji": "🇨🇳", "label": "Tionghoa" },
+          { "value": "fr", "emoji": "🇫🇷", "label": "Prancis" },
+          { "value": "hi", "emoji": "🇮🇳", "label": "Hindi" },
+          { "value": "ja", "emoji": "🇯🇵", "label": "Jepang" },
+          { "value": "ko", "emoji": "🇰🇷", "label": "Korea" },
+          { "value": "pt", "emoji": "🇧🇷", "label": "Portugis" },
+          { "value": "ru", "emoji": "🇷🇺", "label": "Rusia" },
+          { "value": "es", "emoji": "🇪🇸", "label": "Spanyol" },
+          { "value": "vi", "emoji": "🇻🇳", "label": "Vietnam" }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          {
+            "text": "Ayo mulai! 🚀",
+            "audio": ""
           },
           {
             "text": "Apa tingkat bahasa Inggris Anda saat ini?",
-            "audio": "data/survey/audio/in/after_name_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -87,11 +118,11 @@
         "messages": [
           {
             "text": "Hampir selesai, {name}! 🚀",
-            "audio": "data/survey/audio/in/after_level_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Apa tujuan utama Anda belajar bahasa Inggris?",
-            "audio": "data/survey/audio/in/after_level_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -133,11 +164,11 @@
         "messages": [
           {
             "text": "Profil belajar Anda siap, {name}! 🎉",
-            "audio": "data/survey/audio/in/done_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Saya sedang mempersonalisasi pengalaman tutor AI Anda…",
-            "audio": "data/survey/audio/in/done_step_2.wav"
+            "audio": ""
           }
         ]
       }

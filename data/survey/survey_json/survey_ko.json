@@ -16,11 +16,11 @@
         "messages": [
           {
             "text": "안녕하세요! 👋 저는 당신의 FluentAI 튜터입니다.",
-            "audio": "data/survey/audio/ko/intro_step_1.wav"
+            "audio": ""
           },
           {
             "text": "시작하기 전에 — 이름이 무엇인가요?",
-            "audio": "data/survey/audio/ko/intro_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -31,16 +31,47 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           {
             "text": "만나서 반갑습니다, {name}님! 😊",
-            "audio": "data/survey/audio/ko/after_name_step_1.wav"
+            "audio": ""
+          },
+          {
+            "text": "모국어가 무엇인가요?",
+            "audio": ""
+          }
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          { "value": "ar", "emoji": "🇸🇦", "label": "아랍어" },
+          { "value": "zh", "emoji": "🇨🇳", "label": "중국어" },
+          { "value": "fr", "emoji": "🇫🇷", "label": "프랑스어" },
+          { "value": "hi", "emoji": "🇮🇳", "label": "힌디어" },
+          { "value": "ja", "emoji": "🇯🇵", "label": "일본어" },
+          { "value": "ko", "emoji": "🇰🇷", "label": "한국어" },
+          { "value": "pt", "emoji": "🇧🇷", "label": "포르투갈어" },
+          { "value": "ru", "emoji": "🇷🇺", "label": "러시아어" },
+          { "value": "es", "emoji": "🇪🇸", "label": "스페인어" },
+          { "value": "vi", "emoji": "🇻🇳", "label": "베트남어" }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          {
+            "text": "좋아요! 시작해봅시다 🚀",
+            "audio": ""
           },
           {
             "text": "현재 영어 수준이 어떻게 되시나요?",
-            "audio": "data/survey/audio/ko/after_name_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -87,11 +118,11 @@
         "messages": [
           {
             "text": "거의 다 됐어요, {name}님! 🚀",
-            "audio": "data/survey/audio/ko/after_level_step_1.wav"
+            "audio": ""
           },
           {
             "text": "영어를 배우는 주된 목표가 무엇인가요?",
-            "audio": "data/survey/audio/ko/after_level_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -133,11 +164,11 @@
         "messages": [
           {
             "text": "학습 프로필이 준비되었습니다, {name}님! 🎉",
-            "audio": "data/survey/audio/ko/done_step_1.wav"
+            "audio": ""
           },
           {
             "text": "AI 튜터 경험을 맞춤화하고 있습니다…",
-            "audio": "data/survey/audio/ko/done_step_2.wav"
+            "audio": ""
           }
         ]
       }

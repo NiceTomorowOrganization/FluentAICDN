@@ -16,11 +16,11 @@
         "messages": [
           {
             "text": "Hey there! 👋 I'm your FluentAI Tutor.",
-            "audio": "data/survey/audio/en/intro_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Before we begin — what's your name?",
-            "audio": "data/survey/audio/en/intro_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -31,16 +31,87 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           {
             "text": "Nice to meet you, {name}! 😊",
-            "audio": "data/survey/audio/en/after_name_step_1.wav"
+            "audio": ""
+          },
+          {
+            "text": "What's your native language?",
+            "audio": ""
+          }
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          {
+            "value": "ar",
+            "emoji": "🇸🇦",
+            "label": "Arabic"
+          },
+          {
+            "value": "zh",
+            "emoji": "🇨🇳",
+            "label": "Chinese"
+          },
+          {
+            "value": "fr",
+            "emoji": "🇫🇷",
+            "label": "French"
+          },
+          {
+            "value": "hi",
+            "emoji": "🇮🇳",
+            "label": "Hindi"
+          },
+          {
+            "value": "ja",
+            "emoji": "🇯🇵",
+            "label": "Japanese"
+          },
+          {
+            "value": "ko",
+            "emoji": "🇰🇷",
+            "label": "Korean"
+          },
+          {
+            "value": "pt",
+            "emoji": "🇧🇷",
+            "label": "Portuguese"
+          },
+          {
+            "value": "ru",
+            "emoji": "🇷🇺",
+            "label": "Russian"
+          },
+          {
+            "value": "es",
+            "emoji": "🇪🇸",
+            "label": "Spanish"
+          },
+          {
+            "value": "vi",
+            "emoji": "🇻🇳",
+            "label": "Vietnamese"
+          }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          {
+            "text": "Got it! Let's get started 🚀",
+            "audio": ""
           },
           {
             "text": "What's your current English level?",
-            "audio": "data/survey/audio/en/after_name_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -87,11 +158,11 @@
         "messages": [
           {
             "text": "Almost done, {name}! 🚀",
-            "audio": "data/survey/audio/en/after_level_step_1.wav"
+            "audio": ""
           },
           {
             "text": "What's your main goal for learning English?",
-            "audio": "data/survey/audio/en/after_level_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -133,11 +204,11 @@
         "messages": [
           {
             "text": "Your learning profile is ready, {name}! 🎉",
-            "audio": "data/survey/audio/en/done_step_1.wav"
+            "audio": ""
           },
           {
             "text": "I'm personalizing your AI tutor experience now…",
-            "audio": "data/survey/audio/en/done_step_2.wav"
+            "audio": ""
           }
         ]
       }

@@ -25,10 +25,35 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           "Enchanté, {name} ! 😊",
+          "Quelle est votre langue maternelle ?"
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          { "value": "ar", "emoji": "🇸🇦", "label": "Arabe" },
+          { "value": "zh", "emoji": "🇨🇳", "label": "Chinois" },
+          { "value": "fr", "emoji": "🇫🇷", "label": "Français" },
+          { "value": "hi", "emoji": "🇮🇳", "label": "Hindi" },
+          { "value": "ja", "emoji": "🇯🇵", "label": "Japonais" },
+          { "value": "ko", "emoji": "🇰🇷", "label": "Coréen" },
+          { "value": "pt", "emoji": "🇧🇷", "label": "Portugais" },
+          { "value": "ru", "emoji": "🇷🇺", "label": "Russe" },
+          { "value": "es", "emoji": "🇪🇸", "label": "Espagnol" },
+          { "value": "vi", "emoji": "🇻🇳", "label": "Vietnamien" }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          "C'est parti ! 🚀",
           "Quel est votre niveau d'anglais actuel ?"
         ]
       },

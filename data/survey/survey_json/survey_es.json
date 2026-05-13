@@ -16,11 +16,11 @@
         "messages": [
           {
             "text": "¡Hola! 👋 Soy tu Tutor FluentAI.",
-            "audio": "data/survey/audio/es/intro_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Antes de empezar, ¿cuál es tu nombre?",
-            "audio": "data/survey/audio/es/intro_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -31,16 +31,47 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           {
             "text": "¡Encantado de conocerte, {name}! 😊",
-            "audio": "data/survey/audio/es/after_name_step_1.wav"
+            "audio": ""
+          },
+          {
+            "text": "¿Cuál es tu idioma nativo?",
+            "audio": ""
+          }
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          { "value": "ar", "emoji": "🇸🇦", "label": "Árabe" },
+          { "value": "zh", "emoji": "🇨🇳", "label": "Chino" },
+          { "value": "fr", "emoji": "🇫🇷", "label": "Francés" },
+          { "value": "hi", "emoji": "🇮🇳", "label": "Hindi" },
+          { "value": "ja", "emoji": "🇯🇵", "label": "Japonés" },
+          { "value": "ko", "emoji": "🇰🇷", "label": "Coreano" },
+          { "value": "pt", "emoji": "🇧🇷", "label": "Portugués" },
+          { "value": "ru", "emoji": "🇷🇺", "label": "Ruso" },
+          { "value": "es", "emoji": "🇪🇸", "label": "Español" },
+          { "value": "vi", "emoji": "🇻🇳", "label": "Vietnamita" }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          {
+            "text": "¡Vamos! 🚀",
+            "audio": ""
           },
           {
             "text": "¿Cuál es tu nivel actual de inglés?",
-            "audio": "data/survey/audio/es/after_name_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -87,11 +118,11 @@
         "messages": [
           {
             "text": "¡Casi listo, {name}! 🚀",
-            "audio": "data/survey/audio/es/after_level_step_1.wav"
+            "audio": ""
           },
           {
             "text": "¿Cuál es tu objetivo principal al aprender inglés?",
-            "audio": "data/survey/audio/es/after_level_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -133,11 +164,11 @@
         "messages": [
           {
             "text": "¡Tu perfil de aprendizaje está listo, {name}! 🎉",
-            "audio": "data/survey/audio/es/done_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Estoy personalizando tu experiencia de tutor IA ahora…",
-            "audio": "data/survey/audio/es/done_step_2.wav"
+            "audio": ""
           }
         ]
       }

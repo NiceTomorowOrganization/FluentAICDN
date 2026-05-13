@@ -16,11 +16,11 @@
         "messages": [
           {
             "text": "Привет! 👋 Я ваш FluentAI Репетитор.",
-            "audio": "data/survey/audio/ru/intro_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Прежде чем начать — как вас зовут?",
-            "audio": "data/survey/audio/ru/intro_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -31,16 +31,47 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           {
             "text": "Приятно познакомиться, {name}! 😊",
-            "audio": "data/survey/audio/ru/after_name_step_1.wav"
+            "audio": ""
+          },
+          {
+            "text": "Какой ваш родной язык?",
+            "audio": ""
+          }
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          { "value": "ar", "emoji": "🇸🇦", "label": "Арабский" },
+          { "value": "zh", "emoji": "🇨🇳", "label": "Китайский" },
+          { "value": "fr", "emoji": "🇫🇷", "label": "Французский" },
+          { "value": "hi", "emoji": "🇮🇳", "label": "Хинди" },
+          { "value": "ja", "emoji": "🇯🇵", "label": "Японский" },
+          { "value": "ko", "emoji": "🇰🇷", "label": "Корейский" },
+          { "value": "pt", "emoji": "🇧🇷", "label": "Португальский" },
+          { "value": "ru", "emoji": "🇷🇺", "label": "Русский" },
+          { "value": "es", "emoji": "🇪🇸", "label": "Испанский" },
+          { "value": "vi", "emoji": "🇻🇳", "label": "Вьетнамский" }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          {
+            "text": "Отлично! Начнём 🚀",
+            "audio": ""
           },
           {
             "text": "Какой ваш текущий уровень английского?",
-            "audio": "data/survey/audio/ru/after_name_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -87,11 +118,11 @@
         "messages": [
           {
             "text": "Почти готово, {name}! 🚀",
-            "audio": "data/survey/audio/ru/after_level_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Какова ваша главная цель изучения английского?",
-            "audio": "data/survey/audio/ru/after_level_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -133,11 +164,11 @@
         "messages": [
           {
             "text": "Ваш профиль обучения готов, {name}! 🎉",
-            "audio": "data/survey/audio/ru/done_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Я персонализирую ваш опыт ИИ-репетитора прямо сейчас…",
-            "audio": "data/survey/audio/ru/done_step_2.wav"
+            "audio": ""
           }
         ]
       }

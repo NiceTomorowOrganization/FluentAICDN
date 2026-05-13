@@ -16,11 +16,11 @@
         "messages": [
           {
             "text": "नमस्ते! 👋 मैं आपका FluentAI शिक्षक हूँ।",
-            "audio": "data/survey/audio/hi/intro_step_1.wav"
+            "audio": ""
           },
           {
             "text": "शुरू करने से पहले — आपका नाम क्या है?",
-            "audio": "data/survey/audio/hi/intro_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -31,16 +31,47 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           {
             "text": "आपसे मिलकर अच्छा लगा, {name}! 😊",
-            "audio": "data/survey/audio/hi/after_name_step_1.wav"
+            "audio": ""
+          },
+          {
+            "text": "आपकी मातृभाषा क्या है?",
+            "audio": ""
+          }
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          { "value": "ar", "emoji": "🇸🇦", "label": "अरबी" },
+          { "value": "zh", "emoji": "🇨🇳", "label": "चीनी" },
+          { "value": "fr", "emoji": "🇫🇷", "label": "फ्रेंच" },
+          { "value": "hi", "emoji": "🇮🇳", "label": "हिंदी" },
+          { "value": "ja", "emoji": "🇯🇵", "label": "जापानी" },
+          { "value": "ko", "emoji": "🇰🇷", "label": "कोरियाई" },
+          { "value": "pt", "emoji": "🇧🇷", "label": "पुर्तगाली" },
+          { "value": "ru", "emoji": "🇷🇺", "label": "रूसी" },
+          { "value": "es", "emoji": "🇪🇸", "label": "स्पेनिश" },
+          { "value": "vi", "emoji": "🇻🇳", "label": "वियतनामी" }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          {
+            "text": "बढ़िया! चलिए शुरू करते हैं 🚀",
+            "audio": ""
           },
           {
             "text": "आपका वर्तमान अंग्रेज़ी स्तर क्या है?",
-            "audio": "data/survey/audio/hi/after_name_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -87,11 +118,11 @@
         "messages": [
           {
             "text": "लगभग पूरा हो गया, {name}! 🚀",
-            "audio": "data/survey/audio/hi/after_level_step_1.wav"
+            "audio": ""
           },
           {
             "text": "अंग्रेज़ी सीखने का आपका मुख्य लक्ष्य क्या है?",
-            "audio": "data/survey/audio/hi/after_level_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -133,11 +164,11 @@
         "messages": [
           {
             "text": "आपकी सीखने की प्रोफ़ाइल तैयार है, {name}! 🎉",
-            "audio": "data/survey/audio/hi/done_step_1.wav"
+            "audio": ""
           },
           {
             "text": "मैं अभी आपके AI शिक्षक अनुभव को वैयक्तिकृत कर रहा हूँ…",
-            "audio": "data/survey/audio/hi/done_step_2.wav"
+            "audio": ""
           }
         ]
       }

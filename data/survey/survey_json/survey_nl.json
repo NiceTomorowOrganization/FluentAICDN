@@ -16,11 +16,11 @@
         "messages": [
           {
             "text": "Hallo! 👋 Ik ben je FluentAI tutor.",
-            "audio": "data/survey/audio/nl/intro_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Voor we beginnen — wat is je naam?",
-            "audio": "data/survey/audio/nl/intro_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -31,16 +31,47 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           {
             "text": "Leuk je te ontmoeten, {name}! 😊",
-            "audio": "data/survey/audio/nl/after_name_step_1.wav"
+            "audio": ""
+          },
+          {
+            "text": "Wat is je moedertaal?",
+            "audio": ""
+          }
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          { "value": "ar", "emoji": "🇸🇦", "label": "Arabisch" },
+          { "value": "zh", "emoji": "🇨🇳", "label": "Chinees" },
+          { "value": "fr", "emoji": "🇫🇷", "label": "Frans" },
+          { "value": "hi", "emoji": "🇮🇳", "label": "Hindi" },
+          { "value": "ja", "emoji": "🇯🇵", "label": "Japans" },
+          { "value": "ko", "emoji": "🇰🇷", "label": "Koreaans" },
+          { "value": "pt", "emoji": "🇧🇷", "label": "Portugees" },
+          { "value": "ru", "emoji": "🇷🇺", "label": "Russisch" },
+          { "value": "es", "emoji": "🇪🇸", "label": "Spaans" },
+          { "value": "vi", "emoji": "🇻🇳", "label": "Vietnamees" }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          {
+            "text": "Geweldig! Laten we beginnen 🚀",
+            "audio": ""
           },
           {
             "text": "Wat is je huidige Engelse niveau?",
-            "audio": "data/survey/audio/nl/after_name_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -87,11 +118,11 @@
         "messages": [
           {
             "text": "Bijna klaar, {name}! 🚀",
-            "audio": "data/survey/audio/nl/after_level_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Wat is je hoofddoel met Engels leren?",
-            "audio": "data/survey/audio/nl/after_level_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -133,11 +164,11 @@
         "messages": [
           {
             "text": "Je leerprofiel is klaar, {name}! 🎉",
-            "audio": "data/survey/audio/nl/done_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Ik personaliseer nu je AI-tutor ervaring…",
-            "audio": "data/survey/audio/nl/done_step_2.wav"
+            "audio": ""
           }
         ]
       }

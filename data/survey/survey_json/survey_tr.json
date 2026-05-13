@@ -16,11 +16,11 @@
         "messages": [
           {
             "text": "Merhaba! 👋 Ben FluentAI Eğitmeninizim.",
-            "audio": "data/survey/audio/tr/intro_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Başlamadan önce — adınız nedir?",
-            "audio": "data/survey/audio/tr/intro_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -31,16 +31,47 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           {
             "text": "Tanıştığımıza memnun oldum, {name}! 😊",
-            "audio": "data/survey/audio/tr/after_name_step_1.wav"
+            "audio": ""
+          },
+          {
+            "text": "Ana diliniz nedir?",
+            "audio": ""
+          }
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          { "value": "ar", "emoji": "🇸🇦", "label": "Arapça" },
+          { "value": "zh", "emoji": "🇨🇳", "label": "Çince" },
+          { "value": "fr", "emoji": "🇫🇷", "label": "Fransızca" },
+          { "value": "hi", "emoji": "🇮🇳", "label": "Hintçe" },
+          { "value": "ja", "emoji": "🇯🇵", "label": "Japonca" },
+          { "value": "ko", "emoji": "🇰🇷", "label": "Korece" },
+          { "value": "pt", "emoji": "🇧🇷", "label": "Portekizce" },
+          { "value": "ru", "emoji": "🇷🇺", "label": "Rusça" },
+          { "value": "es", "emoji": "🇪🇸", "label": "İspanyolca" },
+          { "value": "vi", "emoji": "🇻🇳", "label": "Vietnamca" }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          {
+            "text": "Harika! Başlayalım 🚀",
+            "audio": ""
           },
           {
             "text": "Mevcut İngilizce seviyeniz nedir?",
-            "audio": "data/survey/audio/tr/after_name_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -87,11 +118,11 @@
         "messages": [
           {
             "text": "Neredeyse bitti, {name}! 🚀",
-            "audio": "data/survey/audio/tr/after_level_step_1.wav"
+            "audio": ""
           },
           {
             "text": "İngilizce öğrenmek için ana hedefiniz nedir?",
-            "audio": "data/survey/audio/tr/after_level_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -133,11 +164,11 @@
         "messages": [
           {
             "text": "Öğrenme profiliniz hazır, {name}! 🎉",
-            "audio": "data/survey/audio/tr/done_step_1.wav"
+            "audio": ""
           },
           {
             "text": "YZ eğitmen deneyiminizi şimdi kişiselleştiriyorum…",
-            "audio": "data/survey/audio/tr/done_step_2.wav"
+            "audio": ""
           }
         ]
       }

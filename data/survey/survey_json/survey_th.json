@@ -16,11 +16,11 @@
         "messages": [
           {
             "text": "สวัสดี! 👋 ฉันคือติวเตอร์ FluentAI ของคุณ",
-            "audio": "data/survey/audio/th/intro_step_1.wav"
+            "audio": ""
           },
           {
             "text": "ก่อนเริ่ม — คุณชื่ออะไร?",
-            "audio": "data/survey/audio/th/intro_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -31,16 +31,47 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           {
             "text": "ยินดีที่ได้รู้จัก, {name}! 😊",
-            "audio": "data/survey/audio/th/after_name_step_1.wav"
+            "audio": ""
+          },
+          {
+            "text": "ภาษาแม่ของคุณคืออะไร?",
+            "audio": ""
+          }
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          { "value": "ar", "emoji": "🇸🇦", "label": "อาหรับ" },
+          { "value": "zh", "emoji": "🇨🇳", "label": "จีน" },
+          { "value": "fr", "emoji": "🇫🇷", "label": "ฝรั่งเศส" },
+          { "value": "hi", "emoji": "🇮🇳", "label": "ฮินดี" },
+          { "value": "ja", "emoji": "🇯🇵", "label": "ญี่ปุ่น" },
+          { "value": "ko", "emoji": "🇰🇷", "label": "เกาหลี" },
+          { "value": "pt", "emoji": "🇧🇷", "label": "โปรตุเกส" },
+          { "value": "ru", "emoji": "🇷🇺", "label": "รัสเซีย" },
+          { "value": "es", "emoji": "🇪🇸", "label": "สเปน" },
+          { "value": "vi", "emoji": "🇻🇳", "label": "เวียดนาม" }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          {
+            "text": "เยี่ยม! เริ่มกันเลย 🚀",
+            "audio": ""
           },
           {
             "text": "ระดับภาษาอังกฤษปัจจุบันของคุณคืออะไร?",
-            "audio": "data/survey/audio/th/after_name_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -87,11 +118,11 @@
         "messages": [
           {
             "text": "เกือบเสร็จแล้ว, {name}! 🚀",
-            "audio": "data/survey/audio/th/after_level_step_1.wav"
+            "audio": ""
           },
           {
             "text": "เป้าหมายหลักของคุณในการเรียนภาษาอังกฤษคืออะไร?",
-            "audio": "data/survey/audio/th/after_level_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -133,11 +164,11 @@
         "messages": [
           {
             "text": "โปรไฟล์การเรียนของคุณพร้อมแล้ว, {name}! 🎉",
-            "audio": "data/survey/audio/th/done_step_1.wav"
+            "audio": ""
           },
           {
             "text": "ฉันกำลังปรับแต่งประสบการณ์ติวเตอร์ AI สำหรับคุณ…",
-            "audio": "data/survey/audio/th/done_step_2.wav"
+            "audio": ""
           }
         ]
       }

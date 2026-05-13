@@ -16,11 +16,11 @@
         "messages": [
           {
             "text": "こんにちは! 👋 私はあなたのFluentAIチューターです。",
-            "audio": "data/survey/audio/ja/intro_step_1.wav"
+            "audio": ""
           },
           {
             "text": "始める前に — お名前は何ですか?",
-            "audio": "data/survey/audio/ja/intro_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -31,16 +31,47 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           {
             "text": "はじめまして、{name}さん! 😊",
-            "audio": "data/survey/audio/ja/after_name_step_1.wav"
+            "audio": ""
+          },
+          {
+            "text": "母国語は何ですか?",
+            "audio": ""
+          }
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          { "value": "ar", "emoji": "🇸🇦", "label": "アラビア語" },
+          { "value": "zh", "emoji": "🇨🇳", "label": "中国語" },
+          { "value": "fr", "emoji": "🇫🇷", "label": "フランス語" },
+          { "value": "hi", "emoji": "🇮🇳", "label": "ヒンディー語" },
+          { "value": "ja", "emoji": "🇯🇵", "label": "日本語" },
+          { "value": "ko", "emoji": "🇰🇷", "label": "韓国語" },
+          { "value": "pt", "emoji": "🇧🇷", "label": "ポルトガル語" },
+          { "value": "ru", "emoji": "🇷🇺", "label": "ロシア語" },
+          { "value": "es", "emoji": "🇪🇸", "label": "スペイン語" },
+          { "value": "vi", "emoji": "🇻🇳", "label": "ベトナム語" }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          {
+            "text": "さあ、始めましょう! 🚀",
+            "audio": ""
           },
           {
             "text": "現在の英語レベルはどれくらいですか?",
-            "audio": "data/survey/audio/ja/after_name_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -87,11 +118,11 @@
         "messages": [
           {
             "text": "もうすぐ完了です、{name}さん! 🚀",
-            "audio": "data/survey/audio/ja/after_level_step_1.wav"
+            "audio": ""
           },
           {
             "text": "英語を学ぶ主な目的は何ですか?",
-            "audio": "data/survey/audio/ja/after_level_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -133,11 +164,11 @@
         "messages": [
           {
             "text": "学習プロフィールの準備ができました、{name}さん! 🎉",
-            "audio": "data/survey/audio/ja/done_step_1.wav"
+            "audio": ""
           },
           {
             "text": "AIチューター体験をパーソナライズしています…",
-            "audio": "data/survey/audio/ja/done_step_2.wav"
+            "audio": ""
           }
         ]
       }

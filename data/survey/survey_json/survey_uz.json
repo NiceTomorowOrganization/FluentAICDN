@@ -16,11 +16,11 @@
         "messages": [
           {
             "text": "Salom! 👋 Men sizning FluentAI o'qituvchingizman.",
-            "audio": "data/survey/audio/uz/intro_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Boshlashdan oldin — ismingiz nima?",
-            "audio": "data/survey/audio/uz/intro_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -31,16 +31,47 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           {
             "text": "Tanishganimdan xursandman, {name}! 😊",
-            "audio": "data/survey/audio/uz/after_name_step_1.wav"
+            "audio": ""
+          },
+          {
+            "text": "Ona tilingiz qaysi?",
+            "audio": ""
+          }
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          { "value": "ar", "emoji": "🇸🇦", "label": "Arabcha" },
+          { "value": "zh", "emoji": "🇨🇳", "label": "Xitoycha" },
+          { "value": "fr", "emoji": "🇫🇷", "label": "Fransuzcha" },
+          { "value": "hi", "emoji": "🇮🇳", "label": "Hindcha" },
+          { "value": "ja", "emoji": "🇯🇵", "label": "Yaponcha" },
+          { "value": "ko", "emoji": "🇰🇷", "label": "Koreyscha" },
+          { "value": "pt", "emoji": "🇧🇷", "label": "Portugalcha" },
+          { "value": "ru", "emoji": "🇷🇺", "label": "Ruscha" },
+          { "value": "es", "emoji": "🇪🇸", "label": "Ispancha" },
+          { "value": "vi", "emoji": "🇻🇳", "label": "Vyetnamcha" }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          {
+            "text": "Ajoyib! Boshlaylik 🚀",
+            "audio": ""
           },
           {
             "text": "Hozirgi ingliz tili darajangiz qanday?",
-            "audio": "data/survey/audio/uz/after_name_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -87,11 +118,11 @@
         "messages": [
           {
             "text": "Deyarli tugadi, {name}! 🚀",
-            "audio": "data/survey/audio/uz/after_level_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Ingliz tilini o'rganishdan asosiy maqsadingiz nima?",
-            "audio": "data/survey/audio/uz/after_level_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -133,11 +164,11 @@
         "messages": [
           {
             "text": "O'rganish profilingiz tayyor, {name}! 🎉",
-            "audio": "data/survey/audio/uz/done_step_1.wav"
+            "audio": ""
           },
           {
             "text": "Hozir AI o'qituvchi tajribangizni shaxsiylashtiryapman…",
-            "audio": "data/survey/audio/uz/done_step_2.wav"
+            "audio": ""
           }
         ]
       }

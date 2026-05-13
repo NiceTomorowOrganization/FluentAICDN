@@ -16,11 +16,11 @@
         "messages": [
           {
             "text": "您好! 👋 我是您的FluentAI导师。",
-            "audio": "data/survey/audio/zh/intro_step_1.wav"
+            "audio": ""
           },
           {
             "text": "在我们开始之前 — 您叫什么名字？",
-            "audio": "data/survey/audio/zh/intro_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -31,16 +31,47 @@
         "save_as": "name"
       },
       {
-        "id": "after_name",
+        "id": "ask_native_language",
         "type": "tutor_messages",
         "messages": [
           {
             "text": "很高兴认识您，{name}! 😊",
-            "audio": "data/survey/audio/zh/after_name_step_1.wav"
+            "audio": ""
+          },
+          {
+            "text": "您的母语是什么？",
+            "audio": ""
+          }
+        ]
+      },
+      {
+        "id": "collect_native_language",
+        "type": "single_choice",
+        "save_as": "native_language",
+        "options": [
+          { "value": "ar", "emoji": "🇸🇦", "label": "阿拉伯语" },
+          { "value": "zh", "emoji": "🇨🇳", "label": "中文" },
+          { "value": "fr", "emoji": "🇫🇷", "label": "法语" },
+          { "value": "hi", "emoji": "🇮🇳", "label": "印地语" },
+          { "value": "ja", "emoji": "🇯🇵", "label": "日语" },
+          { "value": "ko", "emoji": "🇰🇷", "label": "韩语" },
+          { "value": "pt", "emoji": "🇧🇷", "label": "葡萄牙语" },
+          { "value": "ru", "emoji": "🇷🇺", "label": "俄语" },
+          { "value": "es", "emoji": "🇪🇸", "label": "西班牙语" },
+          { "value": "vi", "emoji": "🇻🇳", "label": "越南语" }
+        ]
+      },
+      {
+        "id": "after_name",
+        "type": "tutor_messages",
+        "messages": [
+          {
+            "text": "好的！我们开始吧 🚀",
+            "audio": ""
           },
           {
             "text": "您当前的英语水平如何？",
-            "audio": "data/survey/audio/zh/after_name_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -87,11 +118,11 @@
         "messages": [
           {
             "text": "快完成了，{name}! 🚀",
-            "audio": "data/survey/audio/zh/after_level_step_1.wav"
+            "audio": ""
           },
           {
             "text": "您学习英语的主要目标是什么？",
-            "audio": "data/survey/audio/zh/after_level_step_2.wav"
+            "audio": ""
           }
         ]
       },
@@ -133,11 +164,11 @@
         "messages": [
           {
             "text": "您的学习档案已准备好，{name}! 🎉",
-            "audio": "data/survey/audio/zh/done_step_1.wav"
+            "audio": ""
           },
           {
             "text": "我正在为您个性化AI导师体验…",
-            "audio": "data/survey/audio/zh/done_step_2.wav"
+            "audio": ""
           }
         ]
       }
